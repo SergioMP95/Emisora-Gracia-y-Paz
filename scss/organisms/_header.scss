@@ -1,0 +1,15 @@
+body{
+    background-color: #FCD6FA;
+    margin: 0px;
+}
+.header{
+    background-color: #C451BC;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 60px;
+}
+@include mq-min(xl){
+    .header{
+        height: 72px;
+    }
+}

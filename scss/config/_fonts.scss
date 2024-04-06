@@ -1,0 +1,81 @@
+$font-size         : 1.6rem;
+$font-primary      : 'Mechanized';
+$font-secondary    : 'Poppins';
+$font-terciary     : 'Lexend Deca', sans-serif;
+$font-icon         : 'iconFont'; 
+
+// ==========================================================================
+// Importación de tipografia
+// ==========================================================================
+
+@font-face {
+    font-family: 'Mechanized Med';
+    src: url('../fonts/mechanized/Mechanized-MediumItalic.woff2') format('woff2'),
+        url('../fonts/mechanized/Mechanized-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mechanized';
+    src: url('../fonts/mechanized/Mechanized-Bold.woff2') format('woff2'),
+        url('../fonts/mechanized/Mechanized-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mechanized';
+    src: url('../fonts/mechanized/Mechanized-Regular.woff2') format('woff2'),
+        url('../fonts/mechanized/Mechanized-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url('../fonts/lexend/LexendDeca-Regular.woff2') format('woff2'),
+        url('../fonts/lexend/LexendDeca-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/poppins/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
