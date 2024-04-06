@@ -314,6 +314,23 @@ button {
     display: flex;
     flex-direction: row-reverse;
   }
+  .town__elements--text {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .town {
+    margin-top: 80px;
+  }
+  .town__elements {
+    flex-direction: row;
+  }
+  .town__elements--image {
+    padding-left: 20px;
+  }
+  .town__elements--text {
+    width: 65%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -29,7 +29,23 @@
         &__elements{
             display: flex;
             flex-direction: row-reverse;
-            
+            &--text{
+                width: 70%;
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .town{
+        margin-top: 80px;
+        &__elements{
+            &--image{
+                padding-left: 20px;
+            }
+            flex-direction: row;
+            &--text{
+                width: 65%;
+            }
         }
     }
 }
