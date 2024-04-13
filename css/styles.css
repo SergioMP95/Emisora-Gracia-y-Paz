@@ -142,10 +142,60 @@
   vertical-align: middle;
 }
 
-.events {
-  background-color: red;
+.calendar {
+  font-family: "Mechanized";
+}
+.calendar h2 {
+  text-align: center;
+}
+.calendar__table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.calendar__table table {
+  background-color: #C451BC;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 90%;
+}
+.calendar__table table tr td {
+  border-bottom: #9B0993 2px solid;
+  border-collapse: collapse;
+  padding: 8px 0;
 }
 
+@media (min-width: 1024px) {
+  .calendar__table {
+    margin: 0 auto;
+    width: 95%;
+    flex-direction: row;
+  }
+  .calendar__table table #hour {
+    display: none;
+  }
+}
+.collab h2 {
+  font-family: "Mechanized";
+  text-align: center;
+}
+.collab__slider {
+  font-family: "Poppins";
+  margin: 0 auto;
+  width: 320px;
+}
+.collab__slider--element img {
+  height: 530px;
+  object-fit: cover;
+  width: 320px;
+}
+
+@media (min-width: 720px) {
+  .collab {
+    margin-top: 50px;
+  }
+}
 body {
   background-color: #FCD6FA;
   margin: 0px;

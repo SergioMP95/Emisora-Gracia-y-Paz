@@ -1,0 +1,23 @@
+.collab{
+    h2{
+        font-family: $font-primary;
+        text-align: center;
+    }
+    &__slider{
+        font-family: $font-secondary;
+        margin: 0 auto;
+        width: 320px;
+        &--element{
+            img{
+                height: 530px;
+                object-fit: cover;
+                width: 320px;
+            }
+        }
+    }
+}
+@include mq-min(md){
+    .collab{
+        margin-top: 50px;
+    }
+}
