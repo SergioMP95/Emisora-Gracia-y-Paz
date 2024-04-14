@@ -12,7 +12,18 @@ close.addEventListener("click", () => {
 
 $(document).ready(function(){
     $('.collab__slider').slick({
-        arrows: false,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    });  
+  })
+
+  $(document).ready(function(){
+    $('.director__slider').slick({
+      arrows: false,
       dots: false,
       infinite: true,
       speed: 300,
