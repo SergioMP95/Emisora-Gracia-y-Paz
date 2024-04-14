@@ -466,5 +466,44 @@ button {
     width: 65%;
   }
 }
+.sponsor {
+  text-align: center;
+}
+.sponsor video {
+  height: 50%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.directory__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.directory__container--comercial {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+.directory__container--institucional {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 5px;
+  justify-content: center;
+}
+.directory__container--institucional img {
+  width: 100%;
+  height: auto;
+}
+.directory__container--turistico {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 5px;
+  justify-content: center;
+}
+.directory__container--turistico img {
+  width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=styles.css.map */
