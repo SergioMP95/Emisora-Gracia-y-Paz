@@ -142,8 +142,32 @@
   vertical-align: middle;
 }
 
+.advocate {
+  padding-top: 20px;
+  text-align: center;
+}
+.advocate h2 {
+  font-family: "Mechanized";
+}
+.advocate h3 {
+  font-family: "Mechanized";
+}
+.advocate h4 {
+  font-family: "Mechanized";
+}
+.advocate img {
+  object-fit: cover;
+}
+.advocate p {
+  font-family: "Poppins";
+  font-size: 14px;
+  padding: 0 15px;
+  text-align: left;
+}
+
 .calendar {
   font-family: "Mechanized";
+  padding-top: 30px;
 }
 .calendar h2 {
   text-align: center;
@@ -177,7 +201,7 @@
   }
 }
 .collab {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .collab h2 {
   font-family: "Mechanized";
@@ -207,6 +231,7 @@
   }
 }
 .coordinator {
+  padding-top: 20px;
   text-align: center;
 }
 .coordinator h2 {
@@ -229,8 +254,7 @@
 }
 
 .coverage {
-  margin: 20px 0;
-  padding: 20px 0;
+  padding-top: 10px;
   text-align: center;
 }
 .coverage h2 {
@@ -243,6 +267,9 @@
   text-align: left;
 }
 
+.director {
+  padding-top: 30px;
+}
 .director h2 {
   font-family: "Mechanized";
   text-align: center;
@@ -283,8 +310,7 @@ body {
   }
 }
 .history {
-  margin: 20px 0;
-  padding: 20px 0;
+  padding-top: 20px;
   text-align: center;
 }
 .history h2 {
@@ -418,6 +444,23 @@ button {
     width: 83%;
   }
 }
+.misandvis {
+  padding-top: 20px;
+  text-align: center;
+}
+.misandvis h2 {
+  font-family: "Mechanized";
+}
+.misandvis h3 {
+  font-family: "Mechanized";
+}
+.misandvis p {
+  font-family: "Poppins";
+  font-size: 14px;
+  padding: 0 15px;
+  text-align: left;
+}
+
 .town {
   display: flex;
   flex-direction: column;
@@ -426,21 +469,13 @@ button {
   text-align: center;
   font-family: "Mechanized";
 }
-.town__elements--image {
+.town__image {
   display: flex;
   justify-content: center;
 }
-.town__elements--image img {
+.town__image img {
   border-radius: 5px;
   width: 94%;
-}
-.town__elements--text {
-  display: flex;
-  justify-content: center;
-}
-.town__elements--text p {
-  width: 94%;
-  font-family: "Lexend Deca", sans-serif;
 }
 
 @media (min-width: 720px) {

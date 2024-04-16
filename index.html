@@ -27,30 +27,30 @@
             <li class="menu__options--principal">
                 <a href="#">PROGRAMACIÓN</a>
                 <ul id="submenu2">
-                    <li><a href="#">LUNES</a></li>
-                    <li><a href="#">MARTES</a></li>
-                    <li><a href="#">MIÉRCOLES</a></li>
-                    <li><a href="#">JUEVES</a></li>
-                    <li><a href="#">VIERNES</a></li>
-                    <li><a href="#">SÁBADO</a></li>
-                    <li><a href="#">DOMINGO</a></li>
+                    <li><a href="#monday">LUNES</a></li>
+                    <li><a href="#tuesday">MARTES</a></li>
+                    <li><a href="#wednesday">MIÉRCOLES</a></li>
+                    <li><a href="#thursday">JUEVES</a></li>
+                    <li><a href="#friday">VIERNES</a></li>
+                    <li><a href="#saturday">SÁBADO</a></li>
+                    <li><a href="#sunday">DOMINGO</a></li>
                 </ul>
             </li>
             <li class="menu__options--principal">
                 <a href="#">EQUIPO</a>
                 <ul id="submenu3">
-                    <li><a href="#">DIRECTORES</a></li>
-                    <li><a href="#">COORDINADOR</a></li>
-                    <li><a href="#">COLABORADORES</a></li>
+                    <li><a href="#director">DIRECTORES</a></li>
+                    <li><a href="#coordinator">COORDINADOR</a></li>
+                    <li><a href="#collab">COLABORADORES</a></li>
                 </ul>
             </li>
             <li class="menu__options--principal">
                 <a href="#">EMISORA</a>
                 <ul id="submenu4">
-                    <li><a href="#">COBERTURA</a></li>
-                    <li><a href="#">HISTORIA</a></li>
-                    <li><a href="#">MISION Y VISION</a></li>
-                    <li><a href="#">DEFENSOR DE LA GENTE</a></li>                
+                    <li><a href="#coverage">COBERTURA</a></li>
+                    <li><a href="#history">HISTORIA</a></li>
+                    <li><a href="#misandvis">MISION Y VISION</a></li>
+                    <li><a href="#advocate">DEFENSOR DE LA GENTE</a></li>                
                     <li><a href="#">GALERIA</a></li>
                     <li><a href="#">SERIES</a></li>
                     <li><a href="#">PERSONAJES</a></li>
@@ -80,21 +80,88 @@
     </nav>
     <div class="town">
             <h2>SAN BERNARDO</h2>
-            <div class="town__elements">
-                <div class="town__elements--image">
-                    <img src="Images/catedral.jpg" alt="foto_catedral_san_bernardo">
-                </div>    
-                <div class="town__elements--text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia modi, 
-                        adipisci ex ipsa vel odio eligendi quasi provident iste voluptatibus eius alias. 
-                        Dolor consequatur exercitationem, veritatis quae dignissimos quaerat.
-                    </p>
-                </div>
-            </div>
+            <div class="town__image">
+                <img src="Images/catedral.jpg" alt="foto_catedral_san_bernardo">
+            </div>    
     </div>
+    <div class="calendar">
+        <h2>Programación</h2>
+        <div class="calendar__table">
+            <table id="monday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Lunes</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="tuesday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Martes</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="wednesday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Miércoles</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="thursday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Jueves</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="friday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Viernes</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="saturday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Sábado</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+            <table id="sunday">
+                <tr>
+                    <td>Hora</td>
+                    <td>Domingo</td>
+                </tr>
+                <tr>
+                    <td>6:00 a.m.</td>
+                    <td>Misa</td>
+                </tr>
+            </table>
+        </div>
+
+
     </div>
-    <div class="director">
+    <div class="director" id="director">
             <h2>Directores</h2>
             <div class="director__slider">
                 <div class="director__slider--element">
@@ -149,13 +216,13 @@
                 </div>
             </div>
     </div>
-    <div class="coordinator">
+    <div class="coordinator" id="coordinator">
         <h2>Coordinador</h2> 
         <img src="./images/colaboradores/miguel angel dimate.png" height="300" width="150" alt="Miguel_Dimate">
          <h3>Miguel Angel Dimate "El Angel de la Radio</h3> 
          <p>Director artístico, productor, programador, locutor, asesor legal, control master de audio, video y estudiante de Comunicación Social. </p>
     </div>
-    <div class="collab">
+    <div class="collab" id="collab">
         <h2>Colaboradores</h2>
         <div class="collab__slider">
             <div class="collab__slider--element">
@@ -233,11 +300,11 @@
             </div>
         </div>
     </div>
-    <div class="coverage">
+    <div class="coverage" id="coverage">
         <h2>Cobertura</h2> 
         <p>Con una cobertura del más del 70 % en San Bernardo, Pandi (Cundinamarca), Icononzo (Tolima) y sectores de Venecia, Cabrera, Arbeláez, Fusagasugá, Tibacuy (Cundinamarca) entre otros municipios del departamento del Tolima además de contar con señal vía streaming las 24 horas.  </p> 
     </div>
-    <div class="history">
+    <div class="history" id="history">
         <h2>Historia</h2> 
         <p>El medio de comunicación de los San Bernardinos cumple 27 años de historia, exaltamos el trabajo de todas las personas que han hecho posible este proyecto (directores, operarios, locutores, comerciantes, líderes, comunidad en general) Les contamos una breve reseña histórica.</p> 
         <p>Mediante resolución No. 2670 del 21 de mayo de 1997 el Ministerio de Comunicaciones otorga la licencia de concesión para la prestación del servicio comunitario de radiodifusión sonora a la Parroquia de la Asunción de Nuestra Señora de San Bernardo, siendo notificado el Pbro. Francisco José Beltrán Acosta.</p>
@@ -247,14 +314,20 @@
         <p>En el año 2017 el Pbro. Martín Medina Gómez llega como director, marcando la historia de la Emisora, con el gran reto de reestructurar el equipo de trabajo, responder a los procesos legales y mejorar técnicamente el medio de comunicación. Para ese mismo año toma el cargo como Operario el San Bernardino Miguel Ángel Dimaté Rodríguez, quien de la mano del director, colaboradores y comunidad fueron poco a poco posicionando Gracia y Paz.</p>
         <p>En la actualidad la Emisora Gracia y Paz cuenta con equipos de alta calidad y un gran talento humano que mediante los diferentes programas cubren temáticas de interés, respondiendo las necesidades de la comunidad, Miguel Ángel Dimaté plantea una nueva estrategia con el fin de dar el siguiente paso y seguir creciendo, es entonces que surge el eslogan GRACIA Y PAZ ¡EVOLUCIONA!, mejorando la calidad de producción y contenidos sin perder la identidad.</p>
     </div>
-    <div class="mission">
+    <div class="misandvis" id="misandvis">
         <h2>Misión y visión</h2> 
-        <h3>Misión</h3>
-        <p>Ofrecer a la comunidad una programación variada y de interés social, que permita a los radioescuchas una participación democrática, y que incluya a todos los sectores de la población; pero también que aborde temas de interés general; que además de informar, forme a los oyentes de manera cultural, social y ambiental y que les haga participes de los programas, haciendo uso de las tecnologías de la información y la comunicación. </p> 
-        <h3>Visión</h3>
-        <p>La emisora Gracia y Paz del Municipio de San Bernardo, en el año 2025 estará consolidada como una emisora comunitaria, con programas que atraen al 80% de la población, que hace parte de su cobertura, será económicamente auto sostenible y cumplirá con todos los requisitos necesarios para continuar vigente.</p>
+            <div class="misandvis__elements">
+                <div class="misandvis__elements--mission">
+                    <h3>Misión</h3>
+                    <p>Ofrecer a la comunidad una programación variada y de interés social, que permita a los radioescuchas una participación democrática, y que incluya a todos los sectores de la población; pero también que aborde temas de interés general; que además de informar, forme a los oyentes de manera cultural, social y ambiental y que les haga participes de los programas, haciendo uso de las tecnologías de la información y la comunicación. </p> 
+                </div>
+                <div class="misandvis__elements--vision">
+                    <h3>Visión</h3>
+                    <p>La emisora Gracia y Paz del Municipio de San Bernardo, en el año 2025 estará consolidada como una emisora comunitaria, con programas que atraen al 80% de la población, que hace parte de su cobertura, será económicamente auto sostenible y cumplirá con todos los requisitos necesarios para continuar vigente.</p>
+                </div>
+            </div>
     </div>
-    <div class="defensor">
+    <div class="advocate" id="advocate">
         <h2>Defensor de la Gente</h2> 
         <img src="./images/CLARA GONZALEZ DEFENSORA.png" height="300" width="150" alt="Clara_Gonzalez">
         <h3>Clara Gonzalez</h3> 

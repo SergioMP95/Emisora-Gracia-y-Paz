@@ -1,8 +1,17 @@
-.coverage{
-    padding-top: 10px;
+.advocate{
+    padding-top: 20px;
     text-align: center;
     h2{
         font-family: $font-primary;
+    }
+    h3{
+        font-family: $font-primary;
+    }
+    h4{
+        font-family: $font-primary;
+    }
+    img{
+        object-fit: cover;
     }
     p{
         font-family: $font-secondary;
