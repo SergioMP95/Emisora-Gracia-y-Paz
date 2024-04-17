@@ -292,6 +292,58 @@
   font-size: 14px;
 }
 
+.footer {
+  padding: 10px 0 40px 0;
+}
+.footer h2 {
+  font-family: "Mechanized";
+  text-align: center;
+}
+.footer__elements {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.footer__elements a {
+  align-items: center;
+  color: black;
+  display: flex;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+.footer__elements a:before {
+  font-family: "iconFont";
+}
+.footer__elements--whatsapp {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+.footer__elements--whatsapp a:before {
+  color: #25D366;
+  content: "\e902";
+  font-size: 20px;
+}
+.footer__elements--email {
+  margin-top: 10px;
+}
+.footer__elements--email a:before {
+  color: black;
+  content: "\e903";
+  font-size: 20px;
+  margin-right: 10px;
+}
+.footer__elements--facebook {
+  margin-top: 10px;
+}
+.footer__elements--facebook a:before {
+  color: #3b5998;
+  content: "\e900";
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 body {
   background-color: #FCD6FA;
   margin: 0px;
@@ -334,7 +386,7 @@ button {
 
 .open:before {
   color: white;
-  content: "\e900";
+  content: "\e905";
   font-family: "iconFont";
   font-size: 50px;
 }
@@ -352,7 +404,7 @@ button {
 }
 .menu__close:before {
   color: black;
-  content: "\e900";
+  content: "\e905";
   font-family: "iconFont";
   font-size: 50px;
 }

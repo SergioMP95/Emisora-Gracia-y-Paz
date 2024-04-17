@@ -1,0 +1,51 @@
+.footer{
+    padding: 10px 0 40px 0;
+    h2{
+        font-family: $font-primary;    
+        text-align: center;
+    }
+    &__elements{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        a{
+            align-items: center;
+            color: black;
+            display: flex;
+            font-family: $font-secondary;
+            text-decoration: none;
+        }
+        a:before{
+            font-family: $font-icon;
+        }
+        &--whatsapp{
+            display: flex;
+            flex-direction: row;
+            margin-right: 20px;
+            a:before{
+                color: #25D366;
+                content: "\e902";
+                font-size: 20px;
+            }
+        }
+        &--email{
+            margin-top: 10px;
+            a:before{
+                color: black;
+                content: "\e903";
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+        &--facebook{
+            margin-top: 10px;
+            a:before{
+                color: #3b5998;
+                content: "\e900";
+                font-size: 24px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

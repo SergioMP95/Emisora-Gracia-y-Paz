@@ -8,7 +8,7 @@ button{
 }
 .open:before{
     color: white;
-    content: "\e900";
+    content: "\e905";
     font-family: $font-icon;
     font-size: 50px;
 }
@@ -24,7 +24,7 @@ button{
     visibility: hidden;
     &__close:before{
         color: black;
-        content: "\e900";
+        content: "\e905";
         font-family: $font-icon;
         font-size: 50px;
     }
