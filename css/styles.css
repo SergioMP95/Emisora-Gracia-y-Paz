@@ -292,6 +292,39 @@
   font-size: 14px;
 }
 
+.directory {
+  padding-top: 30px;
+  text-align: center;
+}
+.directory h2 {
+  font-family: "Mechanized";
+}
+.directory h3 {
+  font-family: "Mechanized";
+}
+.directory__container--comercial {
+  padding-top: 10px;
+}
+.directory__container--comercial div img {
+  height: auto;
+  width: 90%;
+}
+.directory__container--institutional {
+  padding-top: 10px;
+}
+.directory__container--institutional div img {
+  height: auto;
+  padding-bottom: 12px;
+  width: 90%;
+}
+.directory__container--turistic {
+  padding-top: 10px;
+}
+.directory__container--turistic div img {
+  height: auto;
+  width: 90%;
+}
+
 .footer {
   padding: 10px 0 40px 0;
 }
@@ -513,13 +546,40 @@ button {
   text-align: left;
 }
 
+.sponsor {
+  padding-top: 30px;
+  text-align: center;
+}
+.sponsor h2 {
+  font-family: "Mechanized";
+}
+.sponsor__video {
+  height: auto;
+  width: 100%;
+}
+.sponsor__video video {
+  border-radius: 5px;
+  height: auto;
+  width: 90%;
+}
+
 .town {
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
+  position: relative;
 }
 .town h2 {
-  text-align: center;
+  bottom: 0;
+  color: #C451BC;
+  border-color: black;
   font-family: "Mechanized";
+  left: 0;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  top: 60px;
 }
 .town__image {
   display: flex;

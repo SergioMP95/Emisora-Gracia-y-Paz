@@ -1,9 +1,19 @@
 .town{
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
+    position: relative;
     h2{
-        text-align: center;
+        bottom: 0;
+        color: #C451BC;
+        border-color:black;
         font-family: $font-primary;
+        left: 0;
+        margin: auto;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        top: 60px;
     }
     &__image{
         display: flex;

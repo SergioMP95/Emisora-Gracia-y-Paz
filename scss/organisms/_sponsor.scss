@@ -1,0 +1,16 @@
+.sponsor{
+    padding-top: 30px;
+    text-align: center;
+    h2{
+        font-family: $font-primary;
+    }
+    &__video{
+        height: auto;
+        width: 100%;
+        video{
+            border-radius: 5px;
+            height: auto;
+            width: 90%;
+        }
+    }
+}

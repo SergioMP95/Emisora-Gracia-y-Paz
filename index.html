@@ -60,9 +60,9 @@
                 <a href="#">DIRECTORIO<br>
                     SAN BERNARDO</a>
                 <ul id="submenu5">
-                    <li><a href="#">COMERCIAL</a></li>
-                    <li><a href="#">TURISTICO</a></li>
-                    <li><a href="#">INSTITUCIONAL</a></li>
+                    <li><a href="#comercial">COMERCIAL</a></li>
+                    <li><a href="#institutional">INSTITUCIONAL</a></li>
+                    <li><a href="#turistic">TURISTICO</a></li>
                     <li><a href="#">EVENTOS</a></li>
                 </ul>
             </li>
@@ -81,8 +81,16 @@
     <div class="town">
             <h2>SAN BERNARDO</h2>
             <div class="town__image">
-                <img src="Images/catedral.jpg" alt="foto_catedral_san_bernardo">
+                <img src="Images/parroquia.png" alt="foto_catedral_san_bernardo">
             </div>    
+    </div>
+    <div class="sponsor">
+        <h2>Patrocinadores</h2>
+            <div class="sponsor__video">
+                <video autoplay controls
+                src="./videos/sponsor.mp4"   type="video/mp4">
+            </video>
+        </div>
     </div>
     <div class="calendar">
         <h2>Programación</h2>
@@ -329,7 +337,7 @@
     </div>
     <div class="advocate" id="advocate">
         <h2>Defensor de la Gente</h2> 
-        <img src="./images/CLARA GONZALEZ DEFENSORA.png" height="300" width="150" alt="Clara_Gonzalez">
+        <img src="./images/clara gonzales.png" height="300" width="150" alt="Clara_Gonzalez">
         <h3>Clara Gonzalez</h3> 
         <h4>Funciones</h4>
         <p>1.Apoyar los procesos formativos en audiencias sobre lectura proactiva de medios, lenguaje de medios y sentidos de la comunicación. </p>
@@ -339,24 +347,51 @@
         <p>5.Reconocer a la audiencia, más que como oyentes, como interlocutores y actores de desarrollo social.</p>
         <p>6.Ejercer veeduría, seguimiento y medición de impacto de la producción radial.</p>
     </div>
-   <div class="footer" id="footer">
-        <h2>Contáctanos</h2>
-        <div class="footer__elements">
-            <div class="footer__elements--whatsapp">
-                <a href="">+57 3134350704 </a><a href="">+57 3143306531</a>
+    <div class="directory">
+        <h2>Directorio</h2>
+        <div class="directory__container">
+            <div class="directory__container--comercial" id="comercial">
+                <h3>Directorio Comercial</h3>
+                <div>
+                    <img src="./images/directorio san bernardo/directorio comercial/andina-express.png" height="auto" width="360" alt="Andina-Express">
+                </div>
             </div>
-            <div class="footer__elements--email">
-                <a href="">graciaypaz.emisora@gmail.com</a>
+            <div class="directory__container--institutional" id="institutional">
+                <h3>Directorio Institucional</h3>
+                <div>
+                    <img src="./images/directorio san bernardo/directorio institucional/bomberos.png" height="auto" width="360"  alt="Bomberos">
+                    <img src="./images/directorio san bernardo/directorio institucional/despacho.png" height="auto" width="360"  alt="despacho-parroquial">
+                    <img src="./images/directorio san bernardo/directorio institucional/estacion-policia.png" height="auto" width="360"  alt="Policia">
+                    <img src="./images/directorio san bernardo/directorio institucional/parroquia.png" height="auto" width="360"  alt="Parroquia">
+                </div>
+            </div> 
+            <div class="directory__container--turistic" id="turistic">
+                <h3>Directorio Turistico</h3>
+                <div>
+                    <img src="./images/directorio san bernardo/directorio turistico/museo.png" height="auto" width="360"  alt="Museo">
+                    <img src="./images/directorio san bernardo/directorio turistico/oficina.png" height="auto" width="360" alt="Oficina-cultura-turismo">
+                </div>
             </div>
-            <div class="footer__elements--facebook">
-                <a href="">Emisora Gracia Y Paz</a>
-            </div>
-
         </div>
-   </div>
-   <script src="./js/jquery.js"></script>
-   <script src="./slick/slick.min.js"></script>
-   <script src="./js/custom.js"></script>
+    </div>
 
+    <div class="footer" id="footer">
+            <h2>Contáctanos</h2>
+            <div class="footer__elements">
+                <div class="footer__elements--whatsapp">
+                    <a href="">+57 3134350704 </a><a href="">+57 3143306531</a>
+                </div>
+                <div class="footer__elements--email">
+                    <a href="">graciaypaz.emisora@gmail.com</a>
+                </div>
+                <div class="footer__elements--facebook">
+                    <a href="">Emisora Gracia Y Paz</a>
+                </div>
+
+            </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
 </body>
 </html>
