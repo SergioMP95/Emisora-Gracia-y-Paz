@@ -142,8 +142,127 @@
   vertical-align: middle;
 }
 
-.events {
-  background-color: red;
+.calendar {
+  font-family: "Mechanized";
+}
+.calendar h2 {
+  text-align: center;
+}
+.calendar__table {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.calendar__table table {
+  background-color: #C451BC;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 90%;
+}
+.calendar__table table tr td {
+  border-bottom: #9B0993 2px solid;
+  border-collapse: collapse;
+  padding: 8px 0;
+}
+
+@media (min-width: 1024px) {
+  .calendar__table {
+    margin: 0 auto;
+    width: 95%;
+    flex-direction: row;
+  }
+  .calendar__table table #hour {
+    display: none;
+  }
+}
+.collab {
+  margin-top: 30px;
+}
+.collab h2 {
+  font-family: "Mechanized";
+  text-align: center;
+}
+.collab__slider {
+  font-family: "Poppins";
+  margin: 0 auto;
+  width: 320px;
+}
+.collab__slider--element img {
+  height: 530px;
+  object-fit: cover;
+  width: 320px;
+}
+.collab__slider--element h3 {
+  font-size: 16px;
+  text-align: center;
+}
+.collab__slider--element p {
+  font-size: 14px;
+}
+
+@media (min-width: 720px) {
+  .collab {
+    margin-top: 50px;
+  }
+}
+.coordinator {
+  text-align: center;
+}
+.coordinator h2 {
+  font-family: "Mechanized";
+}
+.coordinator img {
+  object-fit: cover;
+}
+.coordinator h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  padding: 0 20px;
+}
+.coordinator p {
+  font-family: "Poppins";
+  font-size: 14px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.coverage {
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.coverage h2 {
+  font-family: "Mechanized";
+}
+.coverage p {
+  font-family: "Poppins";
+  font-size: 14px;
+  padding: 0 15px;
+  text-align: left;
+}
+
+.director h2 {
+  font-family: "Mechanized";
+  text-align: center;
+}
+.director__slider {
+  font-family: "Poppins";
+  margin: 0 auto;
+  width: 320px;
+}
+.director__slider--element img {
+  height: 530px;
+  object-fit: cover;
+  width: 320px;
+}
+.director__slider--element h3 {
+  font-size: 16px;
+  text-align: center;
+}
+.director__slider--element p {
+  font-size: 14px;
 }
 
 body {
@@ -163,6 +282,21 @@ body {
     height: 72px;
   }
 }
+.history {
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: center;
+}
+.history h2 {
+  font-family: "Mechanized";
+}
+.history p {
+  font-family: "Poppins";
+  font-size: 14px;
+  padding: 0 15px;
+  text-align: left;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -314,6 +448,62 @@ button {
     display: flex;
     flex-direction: row-reverse;
   }
+  .town__elements--text {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .town {
+    margin-top: 80px;
+  }
+  .town__elements {
+    flex-direction: row;
+  }
+  .town__elements--image {
+    padding-left: 20px;
+  }
+  .town__elements--text {
+    width: 65%;
+  }
+}
+.sponsor {
+  text-align: center;
+}
+.sponsor video {
+  height: 50%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.directory__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.directory__container--comercial {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+.directory__container--institucional {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 5px;
+  justify-content: center;
+}
+.directory__container--institucional img {
+  width: 100%;
+  height: auto;
+}
+.directory__container--turistico {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-gap: 5px;
+  justify-content: center;
+}
+.directory__container--turistico img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

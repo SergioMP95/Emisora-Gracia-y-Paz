@@ -1,0 +1,35 @@
+.directory{
+    &__container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+        &--comercial{
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+           
+        }
+       
+        &--institucional{
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            grid-gap: 5px;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--turistico{
+            display: grid;
+            grid-template-columns: 40% 40% ;
+            grid-gap: 5px;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

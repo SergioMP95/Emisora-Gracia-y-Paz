@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Emisora Gracia y Paz</title>
 </head>
 <body>
-   <header class="header">
+    <header class="header">
     <div class="header__logo">
         <a href="#"><img src="images/gracia-y-paz-transparente-blanco.png" height="56" width="86" alt="Logo_emisora"></a>
     </div>
     <div>Reproductor emisora</div>
-   </header> 
+    </header> 
     <button class="open" id="open"></button>
     <nav class="menu" id="menu">
         <button class="menu__close" id="close"></button>
@@ -38,7 +39,7 @@
             <li class="menu__options--principal">
                 <a href="#">EQUIPO</a>
                 <ul id="submenu3">
-                    <li><a href="#">DIRECTOR</a></li>
+                    <li><a href="#">DIRECTORES</a></li>
                     <li><a href="#">COORDINADOR</a></li>
                     <li><a href="#">COLABORADORES</a></li>
                 </ul>
@@ -77,46 +78,239 @@
             </li>
         </ul>
     </nav>
-   <div class="town">
-        <h2>SAN BERNARDO</h2>
-        <div class="town__elements">
-            <div class="town__elements--image">
-                <img src="Images/catedral.jpg" alt="foto_catedral_san_bernardo">
-            </div>    
-            <div class="town__elements--text">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia modi, 
-                    adipisci ex ipsa vel odio eligendi quasi provident iste voluptatibus eius alias. 
-                    Dolor consequatur exercitationem, veritatis quae dignissimos quaerat.
-                </p>
+    <div class="town">
+            <h2>SAN BERNARDO</h2>
+            <div class="town__elements">
+                <div class="town__elements--image">
+                    <img src="Images/Parroquia.png" alt="foto_catedral_san_bernardo">
+                </div>    
+                <div class="sponsor">
+                    <h2>Patrocinadores</h2>
+                    <video autoplay controls
+                       src="./videos/AUTOSERVICIO - ALCAR.mp4"   type="video/mp4">
+                   </video> 
+                
+                   </div>
+                
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="director">
+            <h2>Directores</h2>
+            <div class="director__slider">
+                <div class="director__slider--element">
+                    <img src="./images/directores/armando melo chingate.png" height="300" width="150" alt="Pbro_Armando_Melo">
+                    <h3>Pbro. Armando Melo Chingate</h3>
+                    <p>Párroco de la Parroquia de la Asunción de Nuestra Señora de San Bernardo desde el año 2023. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/jairo anival sandoval.png" height="300" width="150" alt="Jairo_Sandoval">
+                    <h3>Jairo Anival Sandoval</h3>
+                    <p>xxxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/martin medina gomez.png" height="300" width="150" alt="Martin_Medina">
+                    <h3>Martin Medina Gomez</h3>
+                    <p>xxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/juan carlos clavijo.png" height="300" width="150" alt="Juan_Clavijo">
+                    <h3>Juan Carlos Clavijo</h3>
+                    <p>xxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/carlos julio cardenas.png" height="300" width="150" alt="Carlos_Cardenas">
+                    <h3>Carlos Julio Cardenas</h3>
+                    <p>xxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/carlos alirio niño diaz.png" height="300" width="150" alt="Carlos_Niño">
+                    <h3>Carlos Alirio Niño Diaz</h3>
+                    <p>xxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/serafin borfa castro.png" height="300" width="150" alt="Serafin_Borda">
+                    <h3>Serafin borda Castro</h3>
+                    <p>xxxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/bonifacio arias.png" height="300" width="150" alt="Bonifacio_Arias">
+                    <h3>Bonifacio Arias</h3>
+                    <p>xxxxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/francisco beltran.png" height="300" width="150" alt="Francisco_Beltran">
+                    <h3>Francisco Beltran</h3>
+                    <p>xxxx. </p>
+                </div>
+                <div class="director__slider--element">
+                    <img src="./images/directores/alfonso mora suarez.png" height="300" width="150" alt="Alfonso_Mora">
+                    <h3>Alfonso Mora Suarez</h3>
+                    <p>xxx </p>
+                </div>
+            </div>
+    </div>
+    <div class="coordinator">
+        <h2>Coordinador</h2> 
+        <img src="./images/colaboradores/miguel angel dimate.png" height="300" width="150" alt="Miguel_Dimate">
+         <h3>Miguel Angel Dimate "El Angel de la Radio</h3> 
+         <p>Director artístico, productor, programador, locutor, asesor legal, control master de audio, video y estudiante de Comunicación Social. </p>
+    </div>
+    <div class="collab">
+        <h2>Colaboradores</h2>
+        <div class="collab__slider">
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/adolfo moreno.png" height="300" width="150" alt="Adolfo_Moreno">
+                <h3>Adolfo Moreno</h3>
+                <p>Locutor de la Rumboteka y asesor audiovisual. </p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/alberto jimenez.png" height="300" width="150" alt="Alberto_Jimenez">
+                <h3>Alberto Jiménez</h3>
+                <p>Conductor y locutor del programa Creciendo en Familia. </p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/bibiana cardenas.png" height="300" width="150" alt="Bibiana_Cardenas">
+                <h3>Bibiana Cárdenas</h3>
+                <p>Contadora publica y secretaria de la Emisora.  </p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/claudia arango.png" height="300" width="150" alt="Claudia_Arango">
+                <h3>Claudia Arango </h3>
+                <p>Administradora de empresas agropecuarias y Panelista del Magazine Bienvenida la Mañana. </p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/filiberto avila.png" height="300" width="150" alt="Filiberto_Avila">
+                <h3>Filiberto Ávila</h3>
+                <p>Conductor y locutor del Magazine Bienvenida la Mañana y Conexión Romántica.</p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/jesus castillo leal.png" height="300" width="150" alt="Jesus_Castillo">
+                <h3>Jesús Castillo Leal</h3>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/jose manuel carvajal.png" height="300" width="150" alt="Jose_Carvajal">
+                <h3>José Manuel Carvajal </h3>
+                <p>Economista y Panelista del programa Relatos de mi Pueblo.</p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/juan guillermo barbosa.png" height="300" width="150" alt="Juan_Barbosa">
+                <h3>Juan Guillermo Barbosa </h3>
+                <p>Comunicador Social y Periodista, Panelista del Magazine Bienvenida la Mañana.</p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/lucho muñoz.png" height="300" width="150" alt="Lucho_Muñoz">
+                <h3>Lucho Muñoz</h3>
+                <p>Locutor y animador.</p>
+            </div>
+            <div class="collab__slider--element">
+            <img src="./images/colaboradores/maria de los angeles olaya.png" height="300" width="150" alt="Ma_Angeles_Olaya">
+            <h3>María de los Angeles Olaya</h3>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/salomon hernandez.png" height="300" width="150" alt="Salomon_Hernandez">
+                <h3>Salomón Hernández</h3>
+                <p>Abogado y Panelista del Magazine Bienvenida la Mañana.</p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/reinel diaz.png" height="300" width="150" alt="Reinel_Diaz">
+                <h3>Reinel Diaz</h3>
+                <p>Conductor y locutor del programa Relatos de mi Pueblo </p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/william loaiza.png" height="300" width="150" alt="Wiliam_Loaiza">
+                <h3>William Loaiza</h3>
+                <p>Cantante y locutor de la Rumboteka.</p>
+            </div>
+            <div class="collab__slider--element">
+                <img src="./images/colaboradores/wisley londoño.png" height="300" width="150" alt="Wisley_Londoño">
+                <h3>Wisley Londoño</h3>
+                <p>Locutor de la Discoteca del Oyente y Campo para la Música. </p>
+            </div>
+            <div class="collab__slider--element">
+            <img src="./images/colaboradores/yesid diaz.png" height="300" width="150" alt="Yesid_Diaz">
+            <h3>Yesid Diaz</h3>
+            <p>Periodista y locutor de diferentes espacios como Campo para la Música. </p>
             </div>
         </div>
-   </div>
-   <div class="events">
-    <h2>Eventos importantes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit magni assumenda, nulla aperiam ad 
-    libero? Harum, illo, ipsa necessitatibus doloremque nemo, in perspiciatis temporibus facilis repudiandae
-    eaque saepe ea reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem culpa unde
-    corrupti omnis vero et facilis quibusdam aut! Quam officia ducimus vitae reprehenderit voluptate odio, 
-    itaque praesentium quasi omnis laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    Perspiciatis itaque maxime quos adipisci dicta, reiciendis nam consectetur modi eaque, dolore delectus
-    ea autem iusto quas quam unde facere ex rerum?</p>
-   </div>
-   <div class="footer">
+    </div>
+    <div class="coverage">
+        <h2>Cobertura</h2> 
+        <p>Con una cobertura del más del 70 % en San Bernardo, Pandi (Cundinamarca), Icononzo (Tolima) y sectores de Venecia, Cabrera, Arbeláez, Fusagasugá, Tibacuy (Cundinamarca) entre otros municipios del departamento del Tolima además de contar con señal vía streaming las 24 horas.  </p> 
+    </div>
+    <div class="history">
+        <h2>Historia</h2> 
+        <p>El medio de comunicación de los San Bernardinos cumple 27 años de historia, exaltamos el trabajo de todas las personas que han hecho posible este proyecto (directores, operarios, locutores, comerciantes, líderes, comunidad en general) Les contamos una breve reseña histórica.</p> 
+        <p>Mediante resolución No. 2670 del 21 de mayo de 1997 el Ministerio de Comunicaciones otorga la licencia de concesión para la prestación del servicio comunitario de radiodifusión sonora a la Parroquia de la Asunción de Nuestra Señora de San Bernardo, siendo notificado el Pbro. Francisco José Beltrán Acosta.</p>
+        <p>Mediante resolución No. 2335 del 22 de octubre de 2008 el Ministerio de Comunicaciones autoriza la prórroga, para la prestación del servicio de radiodifusión sonora comunitaria en la frecuencia 102.6 F.M. a través de la Emisora Gracia y Paz, hasta el 09 de julio 2017, siendo notificado el Pbro. Carlos Alidio Niño Díaz.</p>
+        <p>Mediante resolución No. 2966 del 14 noviembre de 2017, el ministerio de Tecnologías de la Información y las Comunicaciones, autoriza la prórroga para la prestación en gestión indirecta del servicio de radiodifusión sonora comunitaria por diez años más, siendo notificado el Pbro. Martín Medina Gómez.</p>
+        <p>Hablar de Gracia y Paz no sería posible sin mencionar el recurso más importante, los locutores, que han dejado huella en los corazones de los radioescuchas de la provincia del Sumapaz, con su talento da vida y magia a la radio. </p>
+        <p>En el año 2017 el Pbro. Martín Medina Gómez llega como director, marcando la historia de la Emisora, con el gran reto de reestructurar el equipo de trabajo, responder a los procesos legales y mejorar técnicamente el medio de comunicación. Para ese mismo año toma el cargo como Operario el San Bernardino Miguel Ángel Dimaté Rodríguez, quien de la mano del director, colaboradores y comunidad fueron poco a poco posicionando Gracia y Paz.</p>
+        <p>En la actualidad la Emisora Gracia y Paz cuenta con equipos de alta calidad y un gran talento humano que mediante los diferentes programas cubren temáticas de interés, respondiendo las necesidades de la comunidad, Miguel Ángel Dimaté plantea una nueva estrategia con el fin de dar el siguiente paso y seguir creciendo, es entonces que surge el eslogan GRACIA Y PAZ ¡EVOLUCIONA!, mejorando la calidad de producción y contenidos sin perder la identidad.</p>
+    </div>
+    <div class="mission">
+        <h2>Misión y visión</h2> 
+        <h3>Misión</h3>
+        <p>Ofrecer a la comunidad una programación variada y de interés social, que permita a los radioescuchas una participación democrática, y que incluya a todos los sectores de la población; pero también que aborde temas de interés general; que además de informar, forme a los oyentes de manera cultural, social y ambiental y que les haga participes de los programas, haciendo uso de las tecnologías de la información y la comunicación. </p> 
+        <h3>Visión</h3>
+        <p>La emisora Gracia y Paz del Municipio de San Bernardo, en el año 2025 estará consolidada como una emisora comunitaria, con programas que atraen al 80% de la población, que hace parte de su cobertura, será económicamente auto sostenible y cumplirá con todos los requisitos necesarios para continuar vigente.</p>
+    </div>
+    <div class="defensor">
+        <h2>Defensor de la Gente</h2> 
+        <img src="./images/CLARA GONZALEZ DEFENSORA.png" height="300" width="150" alt="Clara_Gonzalez">
+        <h3>Clara Gonzalez</h3> 
+        <h4>Funciones</h4>
+        <p>1.Apoyar los procesos formativos en audiencias sobre lectura proactiva de medios, lenguaje de medios y sentidos de la comunicación. </p>
+        <p>2.Apoyar mecanismos y procesos de formación que construyan una conciencia y responsabilidad social, pública y ciudadana, en los comités o juntas de programación frente al manejo de los contenidos difundidos por la emisora comunitaria.</p>
+        <p>3.El defensor deberá recibir las denuncias y tramitar ante quien corresponda.</p>
+        <p>4.Velar por que la programación este acorde a las propuestas acordadas en el proyecto comunitario.</p>
+        <p>5.Reconocer a la audiencia, más que como oyentes, como interlocutores y actores de desarrollo social.</p>
+        <p>6.Ejercer veeduría, seguimiento y medición de impacto de la producción radial.</p>
+    </div>
+    <div class="directory">
+        <h2>Directorio</h2>
+    <div class="directory__container">
+        <h3>Directorio Comercial</h3>
+        <div class="directory__container--comercial">   
+         <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO COMERCIAL/Andina-Express.png" alt="Andina-Express">
+         </div>
+         <h3>Directorio Institucional</h3>
+         <div class="directory__container--institucional">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO INSTITUCIONAL/Bomberos.png" alt="Bomberos">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO INSTITUCIONAL/Despacho.png" alt="despacho-parroquial">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO INSTITUCIONAL/Estacion-policia.png" alt="Policia">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO INSTITUCIONAL/Parroquia.png" alt="Parroquia">
+         </div> 
+         <h3>Directorio Turistico</h3>
+         <div class="directory__container--turistico">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO TURISTICO/Museo.png" alt="Museo">
+           <img src="./images/DIRECTORIO SAN BERNARDO/DIRECTORIO TURISTICO/Oficina.png" alt="Oficina-cultura-turismo">
+         </div>
+    </div>
+    </div>
+ <div class="footer">
         <h2>Contáctanos</h2>
         <div class="footer__logo">
             <img src="./images/logo_whatsapp.png" width="59" height="31" alt="logo_whatsapp">
         </div>
         <div class="footer__text">
-            <a href="#">+57 3015202033</a>
+            <a href="#">+57 3134350704/ 314 3306531 </a>
         </div>
         <div class="footer__logo">
             <img src="./images/logo_facebook.png" width="59" height="31" alt="logo_facebook">
+        </div>
+        <div class="footer__logo">
+            <img src="./images/logo_email.png" width="59" height="31" alt="logo_facebook">
+            <a href="#">graciaypaz.emisora@gmail.com</a>
         </div>
         <div class="footer__text">
             <a href="#">Emisora Gracia y paz</a>
         </div>
    </div>
+   <script src="./js/jquery.js"></script>
    <script src="./js/custom.js"></script>
+  
+
 </body>
 </html>

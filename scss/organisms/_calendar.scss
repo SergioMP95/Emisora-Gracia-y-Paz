@@ -1,0 +1,39 @@
+.calendar{
+    font-family: $font-primary;
+    h2{
+        text-align: center;
+    }
+    &__table{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        table{
+            background-color: #C451BC;
+            border-spacing: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 90%;
+            tr{
+                td{
+                    border-bottom: #9B0993 2px solid;
+                    border-collapse: collapse;
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .calendar{
+        &__table{
+            margin: 0 auto;
+            width: 95%;
+            flex-direction: row;
+            table{
+                #hour{
+                    display: none;
+                }
+            }
+        }
+    }
+}
