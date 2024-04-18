@@ -156,6 +156,8 @@
   font-family: "Mechanized";
 }
 .advocate img {
+  border-radius: 50%;
+  height: 150px;
   object-fit: cover;
 }
 .advocate p {
@@ -238,6 +240,8 @@
   font-family: "Mechanized";
 }
 .coordinator img {
+  border-radius: 50%;
+  height: 150px;
   object-fit: cover;
 }
 .coordinator h3 {
@@ -387,6 +391,14 @@ body {
   display: flex;
   flex-direction: row-reverse;
   height: 60px;
+}
+.header__player iframe {
+  background-color: red !important;
+  border: none;
+  display: none;
+  font-size: 10px !important;
+  height: 60px;
+  width: 320px;
 }
 
 @media (min-width: 1024px) {
@@ -571,15 +583,17 @@ button {
 }
 .town h2 {
   bottom: 0;
-  color: #C451BC;
-  border-color: black;
+  color: white;
   font-family: "Mechanized";
+  font-size: 36px;
   left: 0;
   margin: auto;
   right: 0;
   position: absolute;
   text-align: center;
   top: 60px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 .town__image {
   display: flex;

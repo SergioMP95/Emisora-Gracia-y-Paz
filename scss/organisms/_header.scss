@@ -7,6 +7,16 @@ body{
     display: flex;
     flex-direction: row-reverse;
     height: 60px;
+    &__player{
+        iframe{
+            background-color: red !important;
+            border: none;
+            display: none;
+            font-size: 10px !important;
+            height: 60px;
+            width: 320px;
+        }
+    }
 }
 @include mq-min(xl){
     .header{
