@@ -1,8 +1,25 @@
 .directory{
-    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    position: relative;
     text-align: center;
     h2{
         font-family: $font-primary;
+        margin: 20px 0 0 0;
+    }
+    h2:before{
+        background-color: #006dff;
+        border: solid white 2px;
+        border-radius: 50%;
+        color: white;
+        content: "\e91b";
+        font-family: $font-icon;
+        font-size: 40px;
+        font-weight: 100;
+        left: 15px;
+        padding: 5px;
+        position: absolute;
+        top: -30px;
     }
     h3{
         font-family: $font-primary;

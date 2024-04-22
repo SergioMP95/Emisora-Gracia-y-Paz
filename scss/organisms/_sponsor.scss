@@ -1,14 +1,46 @@
 .sponsor{
-    padding-top: 30px;
+    background-color: #006dff;
+    margin-top: 40px;
+    padding-top: 1px;
+    padding-bottom: 60px;
     text-align: center;
     h2{
+        color: white;
         font-family: $font-primary;
+        position: relative;
+        z-index: 2;
     }
-    &__video{
+    h2:before{
+        background-color: #006dff;
+        border: solid white 2px;
+        border-radius: 50%;
+        color: white;
+        content: "\e91e";
+        font-family: $font-icon;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 5px;
+        position: absolute;
+        right: 15px;
+        top: -50px;
+    }
+    &__content{
         height: auto;
         width: 100%;
         video{
             border-radius: 5px;
+            height: auto;
+            width: 90%;
+        }
+        iframe{
+            border-radius: 5px;
+            height: auto;
+            margin-top: 20px;
+            width: 90%;
+        }
+        img{
+            border-radius: 5px;
+            margin-top: 20px;
             height: auto;
             width: 90%;
         }

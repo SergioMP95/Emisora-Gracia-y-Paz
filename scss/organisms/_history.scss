@@ -1,8 +1,26 @@
 .history{
+    background-color: #006dff;
+    color: white;
+    padding-bottom: 40px;
     padding-top: 20px;
+    position: relative;
     text-align: center;
     h2{
         font-family: $font-primary;
+    }   
+    h2:before{
+        background-color: #006dff;
+        border: solid white 2px;
+        border-radius: 50%;
+        color: white;
+        content: "\e925";
+        font-family: $font-icon;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 5px;
+        position: absolute;
+        right: 15px;
+        top: -30px;
     }
     p{
         font-family: $font-secondary;

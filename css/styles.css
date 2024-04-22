@@ -55,6 +55,13 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "Black Sleep";
+  src: url("../fonts/blacksleep/BlackSleepRegular.woff2") format("woff2"), url("../fonts/blacksleep/BlackSleepRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "iconFont";
   src: url("../../fonts/iconFont/iconFont.eot?uzclj4");
   src: url("../../fonts/iconFont/iconFont.eot?uzclj4#iefix") format("embedded-opentype"), url("../../fonts/iconFont//iconFont.ttf?uzclj4") format("truetype"), url("../../fonts/iconFont/iconFont.woff?uzclj4") format("woff"), url("../../fonts/iconFont/iconFont.svg?uzclj4#iconFont") format("svg");
@@ -143,11 +150,29 @@
 }
 
 .advocate {
+  background-color: #006dff;
+  color: white;
+  padding-bottom: 40px;
   padding-top: 20px;
+  position: relative;
   text-align: center;
 }
 .advocate h2 {
   font-family: "Mechanized";
+}
+.advocate h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e90e";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -30px;
 }
 .advocate h3 {
   font-family: "Mechanized";
@@ -169,10 +194,26 @@
 
 .calendar {
   font-family: "Mechanized";
-  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  position: relative;
 }
 .calendar h2 {
   text-align: center;
+}
+.calendar h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e909";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: -30px;
 }
 .calendar__table {
   align-items: center;
@@ -180,16 +221,20 @@
   flex-direction: column;
 }
 .calendar__table table {
-  background-color: #C451BC;
+  background-color: #006dff;
   border-spacing: 0;
+  color: white;
   margin-bottom: 20px;
   text-align: center;
   width: 90%;
 }
 .calendar__table table tr td {
-  border-bottom: #9B0993 2px solid;
+  border-bottom: #B9D7FF 2px solid;
   border-collapse: collapse;
   padding: 8px 0;
+}
+.calendar__table table tr:nth-child(even) {
+  background-color: #240FD6;
 }
 
 @media (min-width: 1024px) {
@@ -203,19 +248,41 @@
   }
 }
 .collab {
-  padding-top: 30px;
+  background-color: #006dff;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  position: relative;
 }
 .collab h2 {
   font-family: "Mechanized";
   text-align: center;
+}
+.collab h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e915";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -30px;
 }
 .collab__slider {
   font-family: "Poppins";
   margin: 0 auto;
   width: 320px;
 }
+.collab__slider--element {
+  text-align: center;
+}
 .collab__slider--element img {
-  height: 530px;
+  border-radius: 50%;
+  height: 320px;
   object-fit: cover;
   width: 320px;
 }
@@ -233,22 +300,38 @@
   }
 }
 .coordinator {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  position: relative;
   text-align: center;
 }
 .coordinator h2 {
   font-family: "Mechanized";
 }
+.coordinator h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e92d";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: -28px;
+}
 .coordinator img {
   border-radius: 50%;
-  height: 150px;
+  height: 300px;
   object-fit: cover;
 }
 .coordinator h3 {
   font-family: "Poppins";
   font-size: 16px;
   margin: 0 0 12px 0;
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
 }
 .coordinator p {
   font-family: "Poppins";
@@ -259,10 +342,26 @@
 
 .coverage {
   padding-top: 10px;
+  padding-bottom: 60px;
+  position: relative;
   text-align: center;
 }
 .coverage h2 {
   font-family: "Mechanized";
+}
+.coverage h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e907";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: -30px;
 }
 .coverage p {
   font-family: "Poppins";
@@ -272,36 +371,74 @@
 }
 
 .director {
-  padding-top: 30px;
+  background-color: #006dff;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
 }
 .director h2 {
   font-family: "Mechanized";
   text-align: center;
+}
+.director h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e933";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -28px;
 }
 .director__slider {
   font-family: "Poppins";
   margin: 0 auto;
   width: 320px;
 }
+.director__slider--element {
+  text-align: center;
+}
 .director__slider--element img {
-  height: 530px;
+  border-radius: 50%;
+  height: 320px;
   object-fit: cover;
   width: 320px;
 }
 .director__slider--element h3 {
   font-size: 16px;
-  text-align: center;
 }
 .director__slider--element p {
   font-size: 14px;
 }
 
 .directory {
-  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
   text-align: center;
 }
 .directory h2 {
   font-family: "Mechanized";
+  margin: 20px 0 0 0;
+}
+.directory h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e91b";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: -30px;
 }
 .directory h3 {
   font-family: "Mechanized";
@@ -330,11 +467,28 @@
 }
 
 .footer {
+  background-color: #006dff;
+  color: white;
   padding: 10px 0 40px 0;
+  position: relative;
 }
 .footer h2 {
   font-family: "Mechanized";
   text-align: center;
+}
+.footer h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e92c";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -30px;
 }
 .footer__elements {
   align-items: center;
@@ -344,7 +498,7 @@
 }
 .footer__elements a {
   align-items: center;
-  color: black;
+  color: white;
   display: flex;
   font-family: "Poppins";
   text-decoration: none;
@@ -358,7 +512,7 @@
   margin-right: 20px;
 }
 .footer__elements--whatsapp a:before {
-  color: #25D366;
+  color: white;
   content: "\e902";
   font-size: 20px;
 }
@@ -375,19 +529,19 @@
   margin-top: 10px;
 }
 .footer__elements--facebook a:before {
-  color: #3b5998;
+  color: white;
   content: "\e900";
   font-size: 24px;
   margin-right: 10px;
 }
 
 body {
-  background-color: #FCD6FA;
+  background-color: #CAE1FF;
   margin: 0px;
 }
 
 .header {
-  background-color: #C451BC;
+  background-color: #006dff;
   display: flex;
   flex-direction: row-reverse;
   height: 60px;
@@ -407,11 +561,29 @@ body {
   }
 }
 .history {
+  background-color: #006dff;
+  color: white;
+  padding-bottom: 40px;
   padding-top: 20px;
+  position: relative;
   text-align: center;
 }
 .history h2 {
   font-family: "Mechanized";
+}
+.history h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e925";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -30px;
 }
 .history p {
   font-family: "Poppins";
@@ -438,7 +610,7 @@ button {
 
 .menu {
   align-items: flex-start;
-  background-color: #C451BC;
+  background-color: #006dff;
   font-family: "Mechanized";
   left: 0;
   margin: 0;
@@ -446,6 +618,7 @@ button {
   position: absolute;
   top: 0;
   visibility: hidden;
+  z-index: 1;
 }
 .menu__close:before {
   color: black;
@@ -463,7 +636,7 @@ button {
 }
 .menu__options li {
   align-items: center;
-  background-color: #C451BC;
+  background-color: #006dff;
   display: flex;
   height: 50px;
   list-style-type: none;
@@ -477,7 +650,7 @@ button {
   text-decoration: none;
 }
 .menu__options li ul {
-  background-color: #C451BC;
+  background-color: #006dff;
   display: none;
   left: 145px;
   position: absolute;
@@ -488,7 +661,7 @@ button {
   padding: 0 20px;
 }
 .menu__options li:hover {
-  background-color: #F267E8;
+  background-color: #64A6FF;
 }
 .menu__options li:hover a {
   color: black;
@@ -542,11 +715,27 @@ button {
   }
 }
 .misandvis {
+  padding-bottom: 40px;
   padding-top: 20px;
+  position: relative;
   text-align: center;
 }
 .misandvis h2 {
   font-family: "Mechanized";
+}
+.misandvis h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e92f";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: -30px;
 }
 .misandvis h3 {
   font-family: "Mechanized";
@@ -559,73 +748,68 @@ button {
 }
 
 .sponsor {
-  padding-top: 30px;
+  background-color: #006dff;
+  margin-top: 40px;
+  padding-top: 1px;
+  padding-bottom: 60px;
   text-align: center;
 }
 .sponsor h2 {
+  color: white;
   font-family: "Mechanized";
+  position: relative;
+  z-index: 2;
 }
-.sponsor__video {
+.sponsor h2:before {
+  background-color: #006dff;
+  border: solid white 2px;
+  border-radius: 50%;
+  color: white;
+  content: "\e91e";
+  font-family: "iconFont";
+  font-size: 40px;
+  font-weight: 100;
+  padding: 5px;
+  position: absolute;
+  right: 15px;
+  top: -50px;
+}
+.sponsor__content {
   height: auto;
   width: 100%;
 }
-.sponsor__video video {
+.sponsor__content video {
   border-radius: 5px;
   height: auto;
   width: 90%;
 }
+.sponsor__content iframe {
+  border-radius: 5px;
+  height: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+.sponsor__content img {
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+  width: 90%;
+}
 
-.town {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
+.station {
+  margin-top: 20px;
   position: relative;
 }
-.town h2 {
-  bottom: 0;
-  color: white;
-  font-family: "Mechanized";
-  font-size: 36px;
-  left: 0;
-  margin: auto;
-  right: 0;
-  position: absolute;
-  text-align: center;
-  top: 60px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-}
-.town__image {
+.station__image {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.town__image img {
+.station__image--img {
   border-radius: 5px;
+  padding-bottom: 20px;
   width: 94%;
-}
-
-@media (min-width: 720px) {
-  .town__elements {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .town__elements--text {
-    width: 70%;
-  }
-}
-@media (min-width: 1024px) {
-  .town {
-    margin-top: 80px;
-  }
-  .town__elements {
-    flex-direction: row;
-  }
-  .town__elements--image {
-    padding-left: 20px;
-  }
-  .town__elements--text {
-    width: 65%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

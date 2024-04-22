@@ -1,0 +1,15 @@
+.station{
+    margin-top: 20px;
+    position: relative;
+    &__image{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &--img{
+            border-radius: 5px;
+            padding-bottom: 20px;
+            width: 94%;
+        }
+    }
+}

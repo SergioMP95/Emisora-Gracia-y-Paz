@@ -14,7 +14,7 @@ button{
 }
 .menu{
     align-items: flex-start;
-    background-color: #C451BC;
+    background-color: #006dff;
     font-family: $font-primary;
     left: 0;
     margin: 0;
@@ -22,6 +22,7 @@ button{
     position: absolute;
     top: 0;
     visibility: hidden;
+    z-index: 1;
     &__close:before{
         color: black;
         content: "\e905";
@@ -37,7 +38,7 @@ button{
         padding: 0;
         li{
             align-items: center;
-            background-color: #C451BC;
+            background-color: #006dff;
             display: flex;
             height: 50px;
             list-style-type: none;
@@ -50,7 +51,7 @@ button{
                 text-decoration: none;
             }
             ul{
-                background-color: #C451BC;
+                background-color: #006dff;
                 display: none;
                 left: 145px;
                 position: absolute;
@@ -62,7 +63,7 @@ button{
             }
         }
         li:hover{
-            background-color: #F267E8 ;
+            background-color: #64A6FF;
             a{
                 color: black;
             }

@@ -1,22 +1,41 @@
 .director{
-    padding-top: 30px;
+    background-color: #006dff;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    position: relative;
     h2{
         font-family: $font-primary;
         text-align: center;
+    }
+    h2:before{
+        background-color: #006dff;
+        border: solid white 2px;
+        border-radius: 50%;
+        color: white;
+        content: "\e933";
+        font-family: $font-icon;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 5px;
+        position: absolute;
+        right: 15px;
+        top: -28px;
     }
     &__slider{
         font-family: $font-secondary;
         margin: 0 auto;
         width: 320px;
         &--element{
+            text-align: center;
             img{
-                height: 530px;
+                border-radius: 50%;
+                height:320px;
                 object-fit: cover;
                 width: 320px;
             }
             h3{
                 font-size: 16px;
-                text-align: center;
             }
             p{
                 font-size: 14px;

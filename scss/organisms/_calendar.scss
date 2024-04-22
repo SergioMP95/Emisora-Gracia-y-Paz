@@ -1,25 +1,45 @@
 .calendar{
     font-family: $font-primary;
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    position: relative;
     h2{
         text-align: center;
+    }    
+    h2:before{
+        background-color: #006dff;
+        border: solid white 2px;
+        border-radius: 50%;
+        color: white;
+        content: "\e909";
+        font-family: $font-icon;
+        font-size: 40px;
+        font-weight: 100;
+        left: 15px;
+        padding: 5px;
+        position: absolute;
+        top: -30px;
     }
     &__table{
         align-items: center;
         display: flex;
         flex-direction: column;
         table{
-            background-color: #C451BC;
+            background-color: #006dff;
             border-spacing: 0;
+            color: white;
             margin-bottom: 20px;
             text-align: center;
             width: 90%;
             tr{
                 td{
-                    border-bottom: #9B0993 2px solid;
+                    border-bottom: #B9D7FF 2px solid;
                     border-collapse: collapse;
                     padding: 8px 0;
                 }
+            }
+            tr:nth-child(even){
+                background-color: #240FD6;
             }
         }
     }

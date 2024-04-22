@@ -2,6 +2,7 @@ $font-size         : 1.6rem;
 $font-primary      : 'Mechanized';
 $font-secondary    : 'Poppins';
 $font-terciary     : 'Lexend Deca', sans-serif;
+$font-rare         : 'Black Sleep';
 $font-icon         : 'iconFont'; 
 
 // ==========================================================================
@@ -76,6 +77,15 @@ $font-icon         : 'iconFont';
     src: url('../fonts/poppins/Poppins-Thin.woff2') format('woff2'),
         url('../fonts/poppins/Poppins-Thin.woff') format('woff');
     font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Black Sleep';
+    src: url('../fonts/blacksleep/BlackSleepRegular.woff2') format('woff2'),
+        url('../fonts/blacksleep/BlackSleepRegular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
