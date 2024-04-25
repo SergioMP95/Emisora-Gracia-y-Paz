@@ -29,30 +29,24 @@
     &__container{
         &--comercial{
             padding-top: 10px;
-            div{
-                img{
-                    height: auto;
-                    width: 90%;
-                }
+            img{
+                height: auto;
+                width: 90%;
             }
         }
         &--institutional{
             padding-top: 10px;
-            div{
-                img{
-                    height: auto;
-                    padding-bottom: 12px;
-                    width: 90%;
-                }
+            img{
+                height: auto;
+                padding-bottom: 12px;
+                width: 90%;
             }
         }
         &--turistic{
             padding-top: 10px;
-            div{
-                img{
-                    height: auto;
-                    width: 90%;
-                }
+            img{
+                height: auto;
+                width: 90%;
             }
         }
     }
@@ -65,6 +59,35 @@
         &__container{
             margin: 0 auto;
             width: 80%;
+        }
+    }
+}
+@include mq-min(xl){
+    .directory{
+        &__container{
+            width: 90%;
+            &--institutional{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+                grid-gap: 5px;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            &--turistic{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 5px;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+    
         }
     }
 }

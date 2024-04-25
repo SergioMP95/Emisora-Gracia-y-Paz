@@ -40,7 +40,7 @@
         }
     }
 }
-@include mq-min(md){
+@include mq-min(xl){
     .coverage{
         p{
            font-size: 18px;

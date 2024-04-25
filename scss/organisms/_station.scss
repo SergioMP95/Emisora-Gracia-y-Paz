@@ -57,7 +57,10 @@
     .station{
         margin: 0 auto;
         padding-top: 40px;
-        width: 90%;
+        &__image{
+            margin: 0 auto;
+            width: 90%;
+        }
     }
 }
 @include mq-min(xl){

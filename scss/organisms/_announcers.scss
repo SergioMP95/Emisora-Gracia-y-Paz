@@ -1,31 +1,12 @@
-.collab{
-    background-color: #006dff;
-    color: white;
-    padding-bottom: 40px;
-    padding-top: 10px;
-    position: relative;
-    h2{
+.announcers{
+    h3{
         font-family: $font-primary;
         text-align: center;
-    }
-    h2:before{
-        background-color: #006dff;
-        border: solid white 2px;
-        border-radius: 50%;
-        color: white;
-        content: "\e915";
-        font-family: $font-icon;
-        font-size: 40px;
-        font-weight: 100;
-        padding: 5px;
-        position: absolute;
-        right: 15px;
-        top: -30px;
     }
     &__slider{
         font-family: $font-secondary;
         margin: 0 auto;
-        width: 85%;
+        width: 90%;
         &--element{
             text-align: center;
             img{
@@ -34,19 +15,18 @@
                 object-fit: cover;
                 width: 320px;
             }
-            h3{
-                font-size: 16px;
-                text-align: center;
+            h4{
+                margin: 22px 0 0 0;
             }
-            p{
-                font-size: 14px;
+            P{
+                text-align: center !important;
+                margin: 0;
             }
         }
     }
 }
 @include mq-min(md){
-    .collab{
-        margin-top: 50px;
+    .announcers{
         h2:before{
             right: 45px;
         }
@@ -57,18 +37,17 @@
                     margin: 0 auto;
                     width: 250px;
                 }
-                p{
-                    margin: 0 auto;
-                    width: 80%;
-                }
             }
         }
-    }   
+    }
 }
 @include mq-min(xl){
-    .collab{
+    .announcers{
+        padding-bottom: 0;
+        h2:before{
+            right: 45px;
+        }
         &__slider{
-            width: 90%;
             &--element{
                 h3{
                     font-size: 24px;

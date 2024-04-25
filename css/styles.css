@@ -214,6 +214,56 @@
     font-size: 18px;
   }
 }
+.announcers h3 {
+  font-family: "Mechanized";
+  text-align: center;
+}
+.announcers__slider {
+  font-family: "Poppins";
+  margin: 0 auto;
+  width: 90%;
+}
+.announcers__slider--element {
+  text-align: center;
+}
+.announcers__slider--element img {
+  border-radius: 50%;
+  height: 320px;
+  object-fit: cover;
+  width: 320px;
+}
+.announcers__slider--element h4 {
+  margin: 22px 0 0 0;
+}
+.announcers__slider--element P {
+  text-align: center !important;
+  margin: 0;
+}
+
+@media (min-width: 720px) {
+  .announcers h2:before {
+    right: 45px;
+  }
+  .announcers__slider--element img {
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+@media (min-width: 1024px) {
+  .announcers {
+    padding-bottom: 0;
+  }
+  .announcers h2:before {
+    right: 45px;
+  }
+  .announcers__slider--element h3 {
+    font-size: 24px;
+  }
+  .announcers__slider--element p {
+    font-size: 18px;
+  }
+}
 .calendar {
   background-image: url(../../images/background.png);
   background-repeat: repeat;
@@ -350,7 +400,7 @@
     width: 80%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
   .collab__slider {
     width: 90%;
   }
@@ -465,23 +515,23 @@
     width: 80%;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 1024px) {
   .coverage p {
     font-size: 18px;
   }
 }
-.director {
+.direct {
   background-color: #006dff;
   color: white;
-  padding-top: 10px;
   padding-bottom: 40px;
+  padding-top: 20px;
   position: relative;
-}
-.director h2 {
-  font-family: "Mechanized";
   text-align: center;
 }
-.director h2:before {
+.direct h2 {
+  font-family: "Mechanized";
+}
+.direct h2:before {
   background-color: #006dff;
   border: solid white 2px;
   border-radius: 50%;
@@ -494,6 +544,48 @@
   position: absolute;
   right: 15px;
   top: -28px;
+}
+.direct img {
+  border-radius: 50%;
+  height: 300px;
+  object-fit: cover;
+}
+.direct h3 {
+  font-family: "Poppins";
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  padding: 20px 20px 0 20px;
+}
+.direct p {
+  font-family: "Poppins";
+  font-size: 14px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 720px) {
+  .direct {
+    padding-bottom: 50px;
+  }
+  .direct h2:before {
+    right: 45px;
+  }
+  .direct p {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .direct h3 {
+    font-size: 24px;
+  }
+  .direct p {
+    font-size: 18px;
+  }
+}
+.director h3 {
+  font-family: "Mechanized";
+  text-align: center;
 }
 .director__slider {
   font-family: "Poppins";
@@ -509,11 +601,12 @@
   object-fit: cover;
   width: 320px;
 }
-.director__slider--element h3 {
-  font-size: 16px;
+.director__slider--element h4 {
+  margin: 22px 0 0 0;
 }
-.director__slider--element p {
-  font-size: 14px;
+.director__slider--element P {
+  text-align: center !important;
+  margin: 0;
 }
 
 @media (min-width: 720px) {
@@ -572,14 +665,14 @@
 .directory__container--comercial {
   padding-top: 10px;
 }
-.directory__container--comercial div img {
+.directory__container--comercial img {
   height: auto;
   width: 90%;
 }
 .directory__container--institutional {
   padding-top: 10px;
 }
-.directory__container--institutional div img {
+.directory__container--institutional img {
   height: auto;
   padding-bottom: 12px;
   width: 90%;
@@ -587,7 +680,7 @@
 .directory__container--turistic {
   padding-top: 10px;
 }
-.directory__container--turistic div img {
+.directory__container--turistic img {
   height: auto;
   width: 90%;
 }
@@ -599,6 +692,32 @@
   .directory__container {
     margin: 0 auto;
     width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .directory__container {
+    width: 90%;
+  }
+  .directory__container--institutional {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+  .directory__container--institutional img {
+    width: 100%;
+    height: auto;
+  }
+  .directory__container--turistic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+  .directory__container--turistic img {
+    width: 100%;
+    height: auto;
   }
 }
 .footer {
@@ -1099,6 +1218,9 @@ body {
   .station {
     margin: 0 auto;
     padding-top: 40px;
+  }
+  .station__image {
+    margin: 0 auto;
     width: 90%;
   }
 }
