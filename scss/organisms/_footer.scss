@@ -66,3 +66,26 @@
         }
     }
 }
+@include mq-min(md){
+    .footer{
+        h2:before{
+            right: 45px;
+        }
+    }
+}
+@include mq-min(xl){
+    .footer{
+        &__elements{
+            flex-direction: row;
+            font-size: 18px;
+            justify-content: space-around;
+            margin: 0 auto;
+            padding-left: 0;
+            width: 90%;
+            &--whatsapp{
+                flex-direction: column;
+            }
+        }
+    }
+}
+

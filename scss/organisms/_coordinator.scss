@@ -1,4 +1,6 @@
 .coordinator{
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
     padding-top: 10px;
     padding-bottom: 60px;
     position: relative;
@@ -36,5 +38,27 @@
         font-size: 14px;
         margin: 0;
         padding: 0 10px;
+    }
+}
+@include mq-min(md){
+    .coordinator{
+        padding-bottom: 10px;
+        h2:before{
+            left: 45px;
+        }
+        p{
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+}
+@include mq-min(xl){
+    .coordinator{
+        h3{
+            font-size: 24px;
+        }
+        p{
+            font-size: 18px;
+        }
     }
 }

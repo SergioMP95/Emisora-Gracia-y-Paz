@@ -1,4 +1,6 @@
 .calendar{
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
     font-family: $font-primary;
     padding-bottom: 40px;
     padding-top: 10px;
@@ -24,23 +26,35 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        table{
-            background-color: #006dff;
-            border-spacing: 0;
-            color: white;
-            margin-bottom: 20px;
-            text-align: center;
-            width: 90%;
-            tr{
-                td{
-                    border-bottom: #B9D7FF 2px solid;
-                    border-collapse: collapse;
-                    padding: 8px 0;
+        &--section{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            table{
+                background-color: #006dff;
+                border-spacing: 0;
+                color: white;
+                margin-bottom: 20px;
+                text-align: center;
+                width: 90%;
+                tr{
+                    td{
+                        border-bottom: #B9D7FF 2px solid;
+                        border-collapse: collapse;
+                        padding: 8px 0;
+                    }
+                }
+                tr:nth-child(even){
+                    background-color: #240FD6;
                 }
             }
-            tr:nth-child(even){
-                background-color: #240FD6;
-            }
+        }
+    }
+}
+@include mq-min(md){
+    .calendar{
+        h2:before{
+            left: 45px;
         }
     }
 }
@@ -49,10 +63,13 @@
         &__table{
             margin: 0 auto;
             width: 95%;
-            flex-direction: row;
-            table{
-                #hour{
-                    display: none;
+            flex-direction: column;
+            &--section{
+                align-items: start;
+                flex-direction: row;
+                margin-bottom: 20px;
+                table{
+                    margin: 0 10px;
                 }
             }
         }

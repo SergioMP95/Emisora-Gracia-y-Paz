@@ -1,4 +1,6 @@
 .directory{
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
     padding-bottom: 60px;
     padding-top: 20px;
     position: relative;
@@ -52,6 +54,17 @@
                     width: 90%;
                 }
             }
+        }
+    }
+}
+@include mq-min(md){
+    .directory{
+        h2:before{
+            left: 45px;
+        }
+        &__container{
+            margin: 0 auto;
+            width: 80%;
         }
     }
 }

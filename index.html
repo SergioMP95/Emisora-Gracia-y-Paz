@@ -12,6 +12,7 @@
     <div class="header__logo">
         <a href="#"><img src="images/gracia-y-paz-transparente-blanco.png" height="56" width="86" alt="Logo_emisora"></a>
     </div>
+    <img class="header__animation" src="./images/wave.gif" height="30" width="120" alt="">
     </header> 
     <button class="open" id="open"></button>
     <nav class="menu" id="menu">
@@ -78,19 +79,21 @@
         </ul>
     </nav>
     <div class="header__player">
-        <iframe src="https://stream-174.zeno.fm/qgu07t94jchtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxZ3UwN3Q5NGpjaHR2IiwiaG9zdCI6InN0cmVhbS0xNzQuemVuby5mbSIsImp0aSI6Im90WUg1TWJIUzZ1REVsNGc1dW5SU2ciLCJpYXQiOjE3MTM0NDA5MjAsImV4cCI6MTcxMzQ0MDk4MH0.OG1gcnFTUYOM-31XxqeAZdvd2rZe1rseqjcGHtaqtjE&zttl=5" allow="autoplay">
+        <iframe src="https://stream-174.zeno.fm/qgu07t94jchtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxZ3UwN3Q5NGpjaHR2IiwiaG9zdCI6InN0cmVhbS0xNzQuemVuby5mbSIsImp0aSI6Im90WUg1TWJIUzZ1REVsNGc1dW5SU2ciLCJpYXQiOjE3MTM0NDA5MjAsImV4cCI6MTcxMzQ0MDk4MH0.OG1gcnFTUYOM-31XxqeAZdvd2rZe1rseqjcGHtaqtjE&zttl=5" id="video">
         </iframe>
+        
     </div>
     <div class="station">
+        <button id="playbutton" class onclick="document.getElementById('video').play()"></button>
         <div class="station__image">
-            <img class="station__image--img" src="images/emisora.jpg" height="auto" width="350" alt="imagen_de_emisora">
             <img class="station__image--img" src="images/emisora1.jpg" height="auto" width="350" alt="imagen_de_emisora_2">
+            <img class="station__image--img" src="images/emisora.jpg" height="auto" width="350" alt="imagen_de_emisora">
         </div>    
     </div>
     <div class="sponsor" id="sponsor">
         <h2>Patrocinadores</h2>
             <div class="sponsor__content">
-                <video autoplay controls muted="muted" src="./videos/sponsor.mp4" type="video/mp4">
+                <video autoplay controls muted src="./videos/sponsor.mp4" type="video/mp4">
                 </video>
                 <iframe width="350" height="315" src="https://www.youtube.com/embed/gmC9xyFYe3o?si=lt04K1y_AQAtvsLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <img src="images/pitbull-more.jpg" height="350" width="350" alt="logo_pitbull_more">
@@ -99,406 +102,407 @@
     <div class="calendar">
         <h2>Programación</h2>
         <div class="calendar__table">
-            <table id="monday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Lunes</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 5:45 a.m.</td>
-                    <td>Rumbo a mi vereda</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 9:00 a.m.</td>
-                    <td>Creciendo en familia</td>
-                </tr>
-                <tr>
-                    <td>9:00 a.m a 10:00 a.m.</td>
-                    <td>Conociendo nuestra fe</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 12:00 m</td>
-                    <td>Discoteca del oyente</td>
-                </tr>
-                <tr>
-                    <td>12 m a 1:00 p.m.</td>
-                    <td>Música instrumental</td>
-                </tr>
-                <tr>
-                    <td>1:00 p.m. a 2:00 p.m.</td>
-                    <td>Notas vallenatas</td>
-                </tr>
-                <tr>
-                    <td>2:00 p.m. a 3:00 p.m.</td>
-                    <td>Conexión romántica</td>
-                </tr>
-                <tr>
-                    <td>3:00 p.m. a 4:00 p.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>4:00 p.m. a 5:45 p.m.</td>
-                    <td>Campo para la música</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 9:00 p.m.</td>
-                    <td>Balcón del ayer</td>
-                </tr>
-                <tr>
-                    <td>9:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="tuesday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Martes</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 5:45 a.m.</td>
-                    <td>Rumbo a mi vereda</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 9:00 a.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>9:00 a.m a 10:00 a.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 12:00 m</td>
-                    <td>Discoteca del oyente</td>
-                </tr>
-                <tr>
-                    <td>12 m a 1:00 p.m.</td>
-                    <td>Música instrumental</td>
-                </tr>
-                <tr>
-                    <td>1:00 p.m. a 2:00 p.m.</td>
-                    <td>Notas vallenatas</td>
-                </tr>
-                <tr>
-                    <td>2:00 p.m. a 3:00 p.m.</td>
-                    <td>Conexión romántica</td>
-                </tr>
-                <tr>
-                    <td>3:00 p.m. a 4:00 p.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>4:00 p.m. a 5:45 p.m.</td>
-                    <td>Campo para la música</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 9:00 p.m.</td>
-                    <td>Balcón del ayer</td>
-                </tr>
-                <tr>
-                    <td>9:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="wednesday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Miércoles</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 5:45 a.m.</td>
-                    <td>Rumbo a mi vereda</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 10:00 a.m.</td>
-                    <td>Magazine bienvenida la mañana (transmisión facebook live)</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 12:00 m</td>
-                    <td>Discoteca del oyente</td>
-                </tr>
-                <tr>
-                    <td>12 m a 1:00 p.m.</td>
-                    <td>Música instrumental</td>
-                </tr>
-                <tr>
-                    <td>1:00 p.m. a 2:00 p.m.</td>
-                    <td>Notas vallenatas</td>
-                </tr>
-                <tr>
-                    <td>2:00 p.m. a 3:00 p.m.</td>
-                    <td>Conexión romántica</td>
-                </tr>
-                <tr>
-                    <td>3:00 p.m. a 4:00 p.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>4:00 p.m. a 5:45 p.m.</td>
-                    <td>Campo para la música</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 9:00 p.m.</td>
-                    <td>Balcón del ayer</td>
-                </tr>
-                <tr>
-                    <td>9:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="thursday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Jueves</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 5:45 a.m.</td>
-                    <td>Rumbo a mi vereda</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 10:00 a.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 12:00 m</td>
-                    <td>Discoteca del oyente</td>
-                </tr>
-                <tr>
-                    <td>12 m a 1:00 p.m.</td>
-                    <td>Música instrumental</td>
-                </tr>
-                <tr>
-                    <td>1:00 p.m. a 2:00 p.m.</td>
-                    <td>Notas vallenatas</td>
-                </tr>
-                <tr>
-                    <td>2:00 p.m. a 3:00 p.m.</td>
-                    <td>Conexión romántica</td>
-                </tr>
-                <tr>
-                    <td>3:00 p.m. a 4:00 p.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>4:00 p.m. a 5:45 p.m.</td>
-                    <td>Campo para la música</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 9:00 p.m.</td>
-                    <td>Balcón del ayer</td>
-                </tr>
-                <tr>
-                    <td>9:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="friday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Viernes</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 5:45 a.m.</td>
-                    <td>Rumbo a mi vereda</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 10:00 a.m.</td>
-                    <td>San Bernardo en marcha (transmisión facebook live)</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 12:00 m</td>
-                    <td>Discoteca del oyente</td>
-                </tr>
-                <tr>
-                    <td>12 m a 1:00 p.m.</td>
-                    <td>Música instrumental</td>
-                </tr>
-                <tr>
-                    <td>1:00 p.m. a 2:00 p.m.</td>
-                    <td>Notas vallenatas</td>
-                </tr>
-                <tr>
-                    <td>2:00 p.m. a 3:00 p.m.</td>
-                    <td>Conexión romántica</td>
-                </tr>
-                <tr>
-                    <td>3:00 p.m. a 4:00 p.m.</td>
-                    <td>Playlist gracia y paz</td>
-                </tr>
-                <tr>
-                    <td>4:00 p.m. a 5:45 p.m.</td>
-                    <td>Campo para la música</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 9:00 p.m.</td>
-                    <td>Balcón del ayer</td>
-                </tr>
-                <tr>
-                    <td>9:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="saturday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Sábado</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 6:00 a.m.</td>
-                    <td>Clásicos tropicales</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 9:00 a.m.</td>
-                    <td>Creciendo en familia</td>
-                </tr>
-                <tr>
-                    <td>9:00 a.m a 10:00 m</td>
-                    <td>Relatos de mi pueblo (transmisión facebook live)</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m. a 12 m</td>
-                    <td>Rumboteka</td>
-                </tr>
-                <tr>
-                    <td>12 m a 6:00 p.m.</td>
-                    <td>Clásicos tropicales</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 12:00 a.m.</td>
-                    <td>Mágia latina</td>
-                </tr>
-                <tr>
-                    <td>12:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="sunday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Domingo</td>
-                </tr>
-                <tr>
-                    <td>3:00 a.m a 6:00 a.m.</td>
-                    <td>Clásicos tropicales</td>
-                </tr>
-                <tr>
-                    <td>6:00 a.m a 7:00 a.m.</td>
-                    <td>Reflexiones y música religiosa</td>
-                </tr>
-                <tr>
-                    <td>7:00 a.m a 8:00 a.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>8:00 a.m a 9:50 a.m.</td>
-                    <td>Clásicos tropicales</td>
-                </tr>
-                <tr>
-                    <td>10:00 a.m a 11:00 a.m.</td>
-                    <td>Sagrada eucaristía (transmisión facebook live)</td>
-                </tr>
-                <tr>
-                    <td>11:00 a.m. a 6:00 p.m.</td>
-                    <td>Clásicos tropicales</td>
-                </tr>
-                <tr>
-                    <td>6:00 p.m. a 7:00 p.m.</td>
-                    <td>Sagrada eucaristía</td>
-                </tr>
-                <tr>
-                    <td>7:00 p.m. a 12:00 a.m.</td>
-                    <td>Mágia latina</td>
-                </tr>
-                <tr>
-                    <td>12:00 p.m. a 3:00 a.m.</td>
-                    <td>Playlist gracia y paz </td>
-                </tr>
-            </table>
-            <table id="holiday">
-                <tr>
-                    <td>Hora</td>
-                    <td>Festivo</td>
-                </tr>
-                <tr>
-                    <td>24h</td>
-                    <td>Playlist Gracia y paz</td>
-                </tr>
-
-            </table>
+            <div class="calendar__table--section">
+                <table id="monday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Lunes</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 5:45 a.m.</td>
+                        <td>Rumbo a mi vereda</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 9:00 a.m.</td>
+                        <td>Creciendo en familia</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 a.m a 10:00 a.m.</td>
+                        <td>Conociendo nuestra fe</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 12:00 m</td>
+                        <td>Discoteca del oyente</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 1:00 p.m.</td>
+                        <td>Música instrumental</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 p.m. a 2:00 p.m.</td>
+                        <td>Notas vallenatas</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m. a 3:00 p.m.</td>
+                        <td>Conexión romántica</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 p.m. a 4:00 p.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 p.m. a 5:45 p.m.</td>
+                        <td>Campo para la música</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 9:00 p.m.</td>
+                        <td>Balcón del ayer</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="tuesday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Martes</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 5:45 a.m.</td>
+                        <td>Rumbo a mi vereda</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 9:00 a.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 a.m a 10:00 a.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 12:00 m</td>
+                        <td>Discoteca del oyente</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 1:00 p.m.</td>
+                        <td>Música instrumental</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 p.m. a 2:00 p.m.</td>
+                        <td>Notas vallenatas</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m. a 3:00 p.m.</td>
+                        <td>Conexión romántica</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 p.m. a 4:00 p.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 p.m. a 5:45 p.m.</td>
+                        <td>Campo para la música</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 9:00 p.m.</td>
+                        <td>Balcón del ayer</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="wednesday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Miércoles</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 5:45 a.m.</td>
+                        <td>Rumbo a mi vereda</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 10:00 a.m.</td>
+                        <td>Magazine bienvenida la mañana (transmisión facebook live)</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 12:00 m</td>
+                        <td>Discoteca del oyente</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 1:00 p.m.</td>
+                        <td>Música instrumental</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 p.m. a 2:00 p.m.</td>
+                        <td>Notas vallenatas</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m. a 3:00 p.m.</td>
+                        <td>Conexión romántica</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 p.m. a 4:00 p.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 p.m. a 5:45 p.m.</td>
+                        <td>Campo para la música</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 9:00 p.m.</td>
+                        <td>Balcón del ayer</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="thursday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Jueves</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 5:45 a.m.</td>
+                        <td>Rumbo a mi vereda</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 10:00 a.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 12:00 m</td>
+                        <td>Discoteca del oyente</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 1:00 p.m.</td>
+                        <td>Música instrumental</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 p.m. a 2:00 p.m.</td>
+                        <td>Notas vallenatas</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m. a 3:00 p.m.</td>
+                        <td>Conexión romántica</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 p.m. a 4:00 p.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 p.m. a 5:45 p.m.</td>
+                        <td>Campo para la música</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 9:00 p.m.</td>
+                        <td>Balcón del ayer</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="calendar__table--section">
+                <table id="friday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Viernes</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 5:45 a.m.</td>
+                        <td>Rumbo a mi vereda</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 10:00 a.m.</td>
+                        <td>San Bernardo en marcha (transmisión facebook live)</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 12:00 m</td>
+                        <td>Discoteca del oyente</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 1:00 p.m.</td>
+                        <td>Música instrumental</td>
+                    </tr>
+                    <tr>
+                        <td>1:00 p.m. a 2:00 p.m.</td>
+                        <td>Notas vallenatas</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 p.m. a 3:00 p.m.</td>
+                        <td>Conexión romántica</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 p.m. a 4:00 p.m.</td>
+                        <td>Playlist gracia y paz</td>
+                    </tr>
+                    <tr>
+                        <td>4:00 p.m. a 5:45 p.m.</td>
+                        <td>Campo para la música</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 9:00 p.m.</td>
+                        <td>Balcón del ayer</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="saturday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Sábado</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 6:00 a.m.</td>
+                        <td>Clásicos tropicales</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 9:00 a.m.</td>
+                        <td>Creciendo en familia</td>
+                    </tr>
+                    <tr>
+                        <td>9:00 a.m a 10:00 m</td>
+                        <td>Relatos de mi pueblo (transmisión facebook live)</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m. a 12 m</td>
+                        <td>Rumboteka</td>
+                    </tr>
+                    <tr>
+                        <td>12 m a 6:00 p.m.</td>
+                        <td>Clásicos tropicales</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 12:00 a.m.</td>
+                        <td>Mágia latina</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="sunday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Domingo</td>
+                    </tr>
+                    <tr>
+                        <td>3:00 a.m a 6:00 a.m.</td>
+                        <td>Clásicos tropicales</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 a.m a 7:00 a.m.</td>
+                        <td>Reflexiones y música religiosa</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 a.m a 8:00 a.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 a.m a 9:50 a.m.</td>
+                        <td>Clásicos tropicales</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 a.m a 11:00 a.m.</td>
+                        <td>Sagrada eucaristía (transmisión facebook live)</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 a.m. a 6:00 p.m.</td>
+                        <td>Clásicos tropicales</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 p.m. a 7:00 p.m.</td>
+                        <td>Sagrada eucaristía</td>
+                    </tr>
+                    <tr>
+                        <td>7:00 p.m. a 12:00 a.m.</td>
+                        <td>Mágia latina</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 p.m. a 3:00 a.m.</td>
+                        <td>Playlist gracia y paz </td>
+                    </tr>
+                </table>
+                <table id="holiday">
+                    <tr>
+                        <td>Hora</td>
+                        <td>Festivo</td>
+                    </tr>
+                    <tr>
+                        <td>24h</td>
+                        <td>Playlist Gracia y paz</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-
-
     </div>
     <div class="director" id="director">
             <h2>Directores</h2>
@@ -652,6 +656,48 @@
         <p>Hablar de Gracia y Paz no sería posible sin mencionar el recurso más importante, los locutores, que han dejado huella en los corazones de los radioescuchas de la provincia del Sumapaz, con su talento da vida y magia a la radio. </p>
         <p>En el año 2017 el Pbro. Martín Medina Gómez llega como director, marcando la historia de la Emisora, con el gran reto de reestructurar el equipo de trabajo, responder a los procesos legales y mejorar técnicamente el medio de comunicación. Para ese mismo año toma el cargo como Operario el San Bernardino Miguel Ángel Dimaté Rodríguez, quien de la mano del director, colaboradores y comunidad fueron poco a poco posicionando Gracia y Paz.</p>
         <p>En la actualidad la Emisora Gracia y Paz cuenta con equipos de alta calidad y un gran talento humano que mediante los diferentes programas cubren temáticas de interés, respondiendo las necesidades de la comunidad, Miguel Ángel Dimaté plantea una nueva estrategia con el fin de dar el siguiente paso y seguir creciendo, es entonces que surge el eslogan GRACIA Y PAZ ¡EVOLUCIONA!, mejorando la calidad de producción y contenidos sin perder la identidad.</p>
+        
+        <div class="announcers">
+            <h3>Control Master y Locutores</h3>
+            <div class="announcers__slider">
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/oscar diaz.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Oscar Diaz</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/frady molina.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Fraddy Molina</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/jorge moreno.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Jorge Moreno</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/jordan sanchez.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Jordan Sánchez</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/cristian buitrago.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Cristian Buitrago</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/jorge del rio.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Jorge del Rio</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/norberto amaya.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Norberto Amaya</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/william beltran.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>William Beltran</h3>
+                </div>
+                <div class="announcers__slider--element">
+                    <img src="./images/control master y locutores/wilmer gonzales.jpg" height="300" width="150" alt="Oscar_Diaz">
+                    <h3>Wilmer Gonzales</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="misandvis" id="misandvis">
         <h2>Misión y visión</h2> 
@@ -668,7 +714,7 @@
     </div>
     <div class="advocate" id="advocate">
         <h2>Defensor de la Gente</h2> 
-        <img src="./images/clara gonzales.png" height="300" width="150" alt="Clara_Gonzalez">
+        <img src="./images/clara gonzales.png" height="auto" width="300" alt="Clara_Gonzalez">
         <h3>Clara Gonzalez</h3> 
         <h4>Funciones</h4>
         <p>1.Apoyar los procesos formativos en audiencias sobre lectura proactiva de medios, lenguaje de medios y sentidos de la comunicación. </p>

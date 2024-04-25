@@ -1,6 +1,46 @@
 .station{
-    margin-top: 20px;
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
+    padding: 20px 0 30px;
     position: relative;
+    button{
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+    button:before{
+        background-color: #0A4490;
+        border-radius: 50%;
+        bottom: 30px;
+        color: white;
+        content: "\e923";
+        font-family: "iconFont";
+        font-size: 50px;
+        font-weight: 400;
+        left: 30px;
+        padding: 2px;
+        position: fixed;
+        z-index: 999;
+    }
+    .playing{
+        background-color: transparent;
+        border: none;
+        display: block;
+    }
+    .playing:before{
+        background-color: #0A4490;
+        border-radius: 50%;
+        bottom: 30px;
+        color: white;
+        content: "\e922";
+        font-family: "iconFont";
+        font-size: 50px;
+        font-weight: 400;
+        left: 30px;
+        padding: 2px;
+        position: fixed;
+        z-index: 999;
+    }
     &__image{
         align-items: center;
         display: flex;
@@ -11,5 +51,17 @@
             padding-bottom: 20px;
             width: 94%;
         }
+    }
+}
+@include mq-min(md){
+    .station{
+        margin: 0 auto;
+        padding-top: 40px;
+        width: 90%;
+    }
+}
+@include mq-min(xl){
+    .station{
+        padding-top: 110px;
     }
 }

@@ -30,7 +30,7 @@
     }
     img{
         border-radius: 50%;
-        height: 150px;
+        height: 300px;
         object-fit: cover;
         
     }
@@ -39,5 +39,29 @@
         font-size: 14px;
         padding: 0 15px;
         text-align: left;
+    }
+}
+@include mq-min(md){
+    .advocate{
+        padding-bottom: 60px;
+        h2:before{
+            right: 45px;
+        }
+        h4{
+            margin-left: 10%;
+            text-align: left;
+        }
+        p{
+            margin: 0 auto;
+            padding: 8px 0;
+            width: 80%;
+        }
+    }
+}
+@include mq-min(xl){
+    .advocate{
+        p{
+            font-size: 18px;
+        }
     }
 }

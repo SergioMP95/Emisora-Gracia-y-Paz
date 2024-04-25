@@ -1,4 +1,6 @@
 .misandvis{
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
     padding-bottom: 40px;
     padding-top: 20px;
     position: relative;
@@ -28,5 +30,33 @@
         font-size: 14px;
         padding: 0 15px;
         text-align: left;
+    }
+}
+@include mq-min(md){
+    .misandvis{
+        h2:before{
+            left: 45px;
+        }
+        &__elements{
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            width: 80%;
+            &--mission{
+                width: 50%;
+            }
+            &--vision{
+                width: 50%;
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .misandvis{
+        &__elements{
+            p{
+                font-size: 18px;
+            }
+        }
     }
 }

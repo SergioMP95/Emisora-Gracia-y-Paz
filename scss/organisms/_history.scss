@@ -29,3 +29,23 @@
         text-align: left;
     }
 }
+@include mq-min(md){
+    .history{
+        padding-bottom: 60px;
+        h2:before{
+            right: 45px;
+        }
+        p{
+            margin: 0 auto;
+            padding: 5px 0;
+            width: 80%;
+        }
+    }
+}
+@include mq-min(xl){
+    .history{
+        p{
+            font-size: 18px;
+        }
+    }
+}

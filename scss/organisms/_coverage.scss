@@ -1,4 +1,6 @@
-.coverage{
+.coverage{    
+    background-image: url(../../images/background.png);
+    background-repeat: repeat;
     padding-top: 10px;
     padding-bottom: 60px;
     position: relative;
@@ -25,5 +27,23 @@
         font-size: 14px;
         padding: 0 15px;
         text-align: left;
+    }
+}
+@include mq-min(md){
+    .coverage{
+        h2:before{
+            left: 45px;
+        }
+        p{
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+}
+@include mq-min(md){
+    .coverage{
+        p{
+           font-size: 18px;
+        }
     }
 }

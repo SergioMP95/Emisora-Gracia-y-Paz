@@ -1,6 +1,5 @@
 .sponsor{
     background-color: #006dff;
-    margin-top: 40px;
     padding-top: 1px;
     padding-bottom: 60px;
     text-align: center;
@@ -43,6 +42,35 @@
             margin-top: 20px;
             height: auto;
             width: 90%;
+        }
+    }
+}
+@include mq-min(md){
+    .sponsor{
+        h2:before{
+            right: 45px;
+        }
+        &__content{
+            iframe{
+                height: 380px;
+                width: 648px;
+            }
+        }
+    }
+}
+@include mq-min(xl){
+    .sponsor{
+        &__content{
+            video{
+                width: 85%;
+            }
+            iframe{
+                height: 450px;
+                width: 870px;
+            }
+            img{
+                width: 85%;
+            }
         }
     }
 }
