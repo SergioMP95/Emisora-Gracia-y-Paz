@@ -82,22 +82,6 @@
         <video id="station" controls="" autoplay="" name="media"><source src="https://stream-176.zeno.fm/qgu07t94jchtv" type="audio/aac"></video>
         <button id="reproducirBtn" onclick="reproducirIframe()"></button>
     </div>
-    <script>
-        let isPaused = true;
-        function reproducirIframe() {
-            if(isPaused)
-                  station.play();
-            else
-                  station.pause();
-        }
-        station.addEventListener('playing', () => {
-            isPaused = false;
-        });
-        station.addEventListener('pause', () => {
-            isPaused = true
-        });
-        </script>
-    
     <div class="station">
         <div class="station__image">
             <img class="station__image--img" src="images/emisora1.jpg" height="auto" width="350" alt="imagen_de_emisora_2">

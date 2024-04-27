@@ -10,6 +10,19 @@ close.addEventListener("click", () => {
     menu.classList.remove("visible")
 })
 
+let isPaused = true;
+function reproducirIframe() {
+    if(isPaused)
+          station.play();
+    else
+          station.pause();
+}
+station.addEventListener('playing', () => {
+    isPaused = false;
+});
+station.addEventListener('pause', () => {
+    isPaused = true
+});
 
 $(document).ready(function(){
   $('.collab__slider').slick({
@@ -97,3 +110,4 @@ $(document).ready(function(){
     ]
   });  
 })
+
