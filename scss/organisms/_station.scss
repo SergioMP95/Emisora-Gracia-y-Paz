@@ -3,44 +3,6 @@
     background-repeat: repeat;
     padding: 20px 0 30px;
     position: relative;
-    button{
-        background-color: transparent;
-        border: none;
-        display: block;
-    }
-    button:before{
-        background-color: #0A4490;
-        border-radius: 50%;
-        bottom: 30px;
-        color: white;
-        content: "\e923";
-        font-family: "iconFont";
-        font-size: 50px;
-        font-weight: 400;
-        left: 30px;
-        padding: 2px;
-        position: fixed;
-        z-index: 999;
-    }
-    .playing{
-        background-color: transparent;
-        border: none;
-        display: block;
-    }
-    .playing:before{
-        background-color: #0A4490;
-        border-radius: 50%;
-        bottom: 30px;
-        color: white;
-        content: "\e922";
-        font-family: "iconFont";
-        font-size: 50px;
-        font-weight: 400;
-        left: 30px;
-        padding: 2px;
-        position: fixed;
-        z-index: 999;
-    }
     &__image{
         align-items: center;
         display: flex;

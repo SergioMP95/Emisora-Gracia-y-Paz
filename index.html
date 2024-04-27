@@ -78,13 +78,27 @@
             </li>
         </ul>
     </nav>
-    <div class="header__player">
-        <iframe src="https://stream-174.zeno.fm/qgu07t94jchtv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxZ3UwN3Q5NGpjaHR2IiwiaG9zdCI6InN0cmVhbS0xNzQuemVuby5mbSIsImp0aSI6Im90WUg1TWJIUzZ1REVsNGc1dW5SU2ciLCJpYXQiOjE3MTM0NDA5MjAsImV4cCI6MTcxMzQ0MDk4MH0.OG1gcnFTUYOM-31XxqeAZdvd2rZe1rseqjcGHtaqtjE&zttl=5" id="video">
-        </iframe>
-        
+    <div class="player"> 
+        <video id="station" controls="" autoplay="" name="media"><source src="https://stream-176.zeno.fm/qgu07t94jchtv" type="audio/aac"></video>
+        <button id="reproducirBtn" onclick="reproducirIframe()"></button>
     </div>
+    <script>
+        let isPaused = true;
+        function reproducirIframe() {
+            if(isPaused)
+                  station.play();
+            else
+                  station.pause();
+        }
+        station.addEventListener('playing', () => {
+            isPaused = false;
+        });
+        station.addEventListener('pause', () => {
+            isPaused = true
+        });
+        </script>
+    
     <div class="station">
-        <button id="playbutton" class onclick="document.getElementById('video').play()"></button>
         <div class="station__image">
             <img class="station__image--img" src="images/emisora1.jpg" height="auto" width="350" alt="imagen_de_emisora_2">
             <img class="station__image--img" src="images/emisora.jpg" height="auto" width="350" alt="imagen_de_emisora">
@@ -93,10 +107,12 @@
     <div class="sponsor" id="sponsor">
         <h2>Patrocinadores</h2>
             <div class="sponsor__content">
-                <video autoplay controls muted src="./videos/sponsor.mp4" type="video/mp4">
-                </video>
-                <iframe width="350" height="315" src="https://www.youtube.com/embed/gmC9xyFYe3o?si=lt04K1y_AQAtvsLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <video autoplay controls muted src="./videos/sponsor.mp4" type="video/mp4"></video>
                 <img src="images/pitbull-more.jpg" height="350" width="350" alt="logo_pitbull_more">
+                <iframe width="350" height="315" src="https://www.youtube.com/embed/gmC9xyFYe3o?si=lt04K1y_AQAtvsLy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img src="images/exi campo.png" height="350" width="350" alt="exi_campo">
+                <video autoplay controls muted src="./videos/andina express.mp4" type="video/mp"></video>
+                <img src="images/bibiana cardenas.png" height="400" width="350" alt="">
             </div>
     </div>
     <div class="calendar">

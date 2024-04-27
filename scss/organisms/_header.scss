@@ -29,13 +29,6 @@ body{
         margin-right: 12px;
         width: 180px;
     }
-    &__player{
-      display: block;
-      iframe{
-        height: 52px;
-        width: 102px;
-      }
-    }
 }
 @include mq-min(xl){
     .header{
